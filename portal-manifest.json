@@ -1,6 +1,6 @@
 {
   "schema": "neosmartuxui/portal-artifact@1",
-  "sourceSha": "aab870401f9275a0b8a003a5a828ca4d9f21f297",
+  "sourceSha": "1ad97610b300d4b838e688480c7ec6bdde7ca749",
   "sections": [
     "/",
     "/components/",
@@ -36,43 +36,43 @@
   "files": [
     {
       "path": "blocks/index.html",
-      "sha256": "13de1e87d09d256d12a89899da80636824cabb5e70bcb62931c69ee7dd900f17",
+      "sha256": "5a5a2e4338cd98c4ab1443af7b35995a4c6081a125245324ccc8bfff0c992eb3",
       "bytes": 3911
     },
     {
       "path": "components/catalog.json",
-      "sha256": "c1b902531d35c2bc9a1fcf4351cd6f20d12b2dc668051e08e6c6b182b4f2968a",
+      "sha256": "d2404f80ceda0fd0377b9f91b0bd9e37947c5663c0fcc1aee9bf33ec9c5b433c",
       "bytes": 24278
     },
     {
       "path": "components/index.html",
-      "sha256": "ef4595da253e4ef9459ef425b8a65c66f1b23265dab6fe592f665d5c07715425",
+      "sha256": "a634ebd840866e52fb2b0b752c0c4b50473596946b625a56f5ac2fcbd668d8f5",
       "bytes": 3357
     },
     {
       "path": "docs/index.html",
-      "sha256": "ede9432bf900e021ee1f422c0b3fbeb61c2bb4bbc4adf0590579e92ffd068ad9",
+      "sha256": "0390c25a9b41b0f0ad1bfbc3d8fc953f1f35475c0b3c16856fb2a5fdaf202f1b",
       "bytes": 3986
     },
     {
       "path": "flavors/index.html",
-      "sha256": "fde4904461ecd42b8583f40458689a0d96694ac96aa7fc86b9f2a2a86131c2a9",
+      "sha256": "d5fe209cbf7f4167d661212443221af59b3c0875985e5da0968bfe35723d05bf",
       "bytes": 4677
     },
     {
       "path": "index.html",
-      "sha256": "04c977f794791de2c5ec426323899b881113c9a9035a3454fb86ada7e52308a8",
-      "bytes": 11167
+      "sha256": "b05bbd448f442ebdb5e00ad2f0ea94b5b9f5f8aaa757f8fa0a4e06cf45ae293f",
+      "bytes": 11131
     },
     {
       "path": "labs/index.html",
-      "sha256": "bbede32c35f85d3c5b321398cf888c0ec20ce935cefc1866c7ac7f3468ca468a",
+      "sha256": "613e92124b60b1fda24ceae9cbb25a8c26f47422dcf45e0401c41695c93856d0",
       "bytes": 4298
     },
     {
       "path": "portal.css",
-      "sha256": "38a3443a40b71876fa5ba8ff379b23fe06872954604b441469b34cf215eae163",
-      "bytes": 18326
+      "sha256": "a956356934e36fa9a0b5248f6b4aed9c3c786a16320642c0cfff10a5198b7d33",
+      "bytes": 22161
     },
     {
       "path": "portal.mjs",
@@ -81,14 +81,14 @@
     },
     {
       "path": "templates/index.html",
-      "sha256": "c35f9933281569031bd6ad2c1345e7f7f084242c0751d6fc9911f16c06ae22b6",
-      "bytes": 3520
+      "sha256": "97b08d687634a722ef44425cd6ed1147ed1bd205f3e7ba32bd056ba80163e009",
+      "bytes": 3508
     },
     {
       "path": "themes/index.html",
-      "sha256": "bea306e49e9609c22d86b343a0740fec237b86664794c7939a84c0cc3989465e",
+      "sha256": "c1e43b209a152c81e3f071b017771956a6fe19ce50665210670cae24bdd6de4c",
       "bytes": 6609
     }
   ],
-  "artifactHash": "2fe42ccf1f43d3c4381dabc49ba60d6b4b97594d73185968b90c49f06bf51fc9"
+  "artifactHash": "a6cd220c1bd4dee81bab3f7523760da31e3d11fbf5f266f12cb9ea62df4359d9"
 }
