@@ -1,6 +1,6 @@
 {
   "$schema": "../../spec/schemas/component-registry.schema.json",
-  "schema": "neosmartuxui/component-registry@1",
+  "schema": "neosmartui/component-registry@1",
   "domain": "core",
   "components": [
     {
@@ -438,9 +438,18 @@
     {
       "id": "core.list",
       "contract": "components/list.json",
-      "maturity": "implemented",
+      "maturity": "public-proof",
       "evidence": {
         "implementation": "packages/adapters/web/components/list.css",
+        "publicProof": "evidence/public/core.list.json"
+      }
+    },
+    {
+      "id": "core.description-list",
+      "contract": "components/description-list.json",
+      "maturity": "implemented",
+      "evidence": {
+        "implementation": "packages/adapters/web/components/description-list.css",
         "publicProof": null
       }
     }

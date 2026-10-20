@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta name="description" content="NeoSmartUXUI — the AI-first neo-brutalist UI system. Built for humans. Structured for agents." />
     <title>NeoSmartUXUI — AI-First Neo-Brutalist UI/UX Design System</title>
     <link rel="stylesheet" href="./styles.css" />
@@ -56,6 +57,7 @@
     <link rel="stylesheet" href="./data-grid.css" />
     <link rel="stylesheet" href="./item.css" />
     <link rel="stylesheet" href="./list.css" />
+    <link rel="stylesheet" href="./description-list.css" />
   </head>
   <body>
     <main>
@@ -1031,6 +1033,25 @@
             </li>
           </ul>
           <button class="ns-button" id="list-after" type="button">After List</button>
+        </div>
+      </section>
+      <section aria-labelledby="description-list-slice">
+        <h2 id="description-list-slice">Implemented component: <code>core.description-list</code></h2>
+        <p>DescriptionList preserves native term/description relationships: real dl/dt/dd source order can express shared terms and multiple descriptions without becoming a List, Item row, Table, Grid, form field, or synthetic interactive control.</p>
+        <div class="description-list-example">
+          <dl class="ns-description-list" id="description-list-demo" data-state="rest">
+            <dt>Foundry</dt>
+            <dt>Component Lab</dt>
+            <dd>These two authored terms share one native description without duplicated presentation rows.</dd>
+
+            <dt>Public proof</dt>
+            <dd>49 Core components are currently public-proof in the deployed singleton.</dd>
+            <dd><a id="description-list-demo-link" href="#principles">Review permanent evidence rules</a></dd>
+
+            <dt>Long localized reference</dt>
+            <dd>description-list-accessibility-verification-native-term-description-source-order-2026-09-22</dd>
+          </dl>
+          <button class="ns-button" id="description-list-after" type="button">After DescriptionList</button>
         </div>
       </section>
       <section aria-labelledby="studio-surface">

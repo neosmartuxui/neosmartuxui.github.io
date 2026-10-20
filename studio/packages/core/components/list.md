@@ -60,7 +60,7 @@ The shipping Web implementation is CSS-only at `packages/adapters/web/components
 
 The canonical preview is a real `<ul id="list-demo" class="ns-list" data-state="rest">` with real `<li>` children. It composes proven `core.item` rows and a real nested Button action while preserving the semantic List → list item → Item/content/control hierarchy. List CSS styles the collection and markers; it does not add replacement ARIA roles, synthetic row targets or alternate hidden list markup.
 
-The implementation cohort expands all ten official Light/Dark Theme resolution scopes from 48 to **49 Core** while preserving exactly **55 semantic token values** under five exact-set Flavor maintenance records. The canonical preview matrix expands from 265 to **266 real states**, with List's sole `rest` state fixture-realized and no controller/binding.
+The proven shipping cohort resolves all ten official Light/Dark Theme scopes at **49 Core / 55 semantic token values**. The canonical preview matrix contains **266 real states**, with List's sole `rest` state fixture-realized and no controller/binding.
 
 ## Responsive, RTL, reduced-motion, and forced-colors implementation
 
@@ -74,8 +74,8 @@ List introduces no component-specific semantic token IDs. It reuses the existing
 
 The contract deliberately excludes focus, action, pressure, depth, selection, state-color and motion tokens because List itself is passive and non-interactive.
 
-The maintained local implementation scope is **49 Core / 55 tokens**. Public proof and Pages remain bound to the deployed **48-Core / 55-token / 265-state** Item singleton until mandatory merged-main implementation verification, exact-artifact deployment, native/live verification, and proof-only promotion complete.
+Public proof and Pages are bound to the exact deployed **49-Core / 55-token / 266-state** singleton from merged source `3d41541d81f8fd5c24e11c9d12a17bb9e7a9e9b0`, Pages commit `d21d12143368efaee1ce1e083f7f936b209b1e19`, and Pages tree `2662bbdb270ab2fb0d336ca1e31889672a5fdc8b`.
 
 ## Maturity
 
-Maturity is `implemented`. Implementation evidence is `packages/adapters/web/components/list.css`; public-proof evidence remains null until exact-head implementation Quality, guarded merge, mandatory merged-main Quality, exact-artifact deployment, native/live verification, structural proof promotion, and mandatory merged-main proof Quality complete.
+Maturity is `public-proof`. Implementation evidence is `packages/adapters/web/components/list.css`; structural public proof is `evidence/public/core.list.json` and is bound to the exact merged-main browser evidence, exact-artifact Pages deployment, native Pages verification, and live HTTPS surface.
