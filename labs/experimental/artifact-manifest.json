@@ -1,0 +1,336 @@
+{
+  "schema": "neosmartuxui/experimental-artifact@1",
+  "sourceRepository": "neosmartuxui/neosmartuxui",
+  "sourceSha": "228fb167a97e5dddf77dd383a774be4779ff19ad",
+  "entrypoint": "labs/experimental/index.html",
+  "publishedPath": "/labs/experimental/",
+  "scope": "public-experimental-demo-only",
+  "productionReady": false,
+  "privatePackageIncluded": false,
+  "githubActionsUsed": false,
+  "counts": {
+    "commerce": 35,
+    "operations": 12,
+    "blocks": 7,
+    "templates": 2,
+    "total": 56
+  },
+  "files": [
+    {
+      "path": "blocks/blocks.css",
+      "sha256": "307fe19925213087e2d182ea706b3dce2d9feff5619ee4fcfb04bfd4cfe42bd9",
+      "bytes": 2404
+    },
+    {
+      "path": "blocks/blocks/commerce/index.mjs",
+      "sha256": "d71b1ef030fe1484c57ff45a55f8d0374a4c867710362ac693b07276b3ddd060",
+      "bytes": 8502
+    },
+    {
+      "path": "blocks/commerce.css",
+      "sha256": "282127aa217af4b30cf17ad51f490ab16d5d1b02e05ee2465e13b4c95fdbed38",
+      "bytes": 11351
+    },
+    {
+      "path": "blocks/core.css",
+      "sha256": "83522098cc91a4e01dff15f17549e40caa095f45b5452ab039c7aa0578526ae6",
+      "bytes": 5001
+    },
+    {
+      "path": "blocks/demo.mjs",
+      "sha256": "5928158075bd431e6f1422d6516a69d846cd35abcfe9c542a24c1afcead5a795",
+      "bytes": 4691
+    },
+    {
+      "path": "blocks/favicon.ico",
+      "sha256": "6634f81cda79bd0256d4e9649586582ff499085b450df7ca107e2b6dc869b0b6",
+      "bytes": 2619
+    },
+    {
+      "path": "blocks/index.html",
+      "sha256": "a0b0841cf33a46af82803657065470aaf84029a90947da78657aaaa84bae62e8",
+      "bytes": 2904
+    },
+    {
+      "path": "blocks/operations.css",
+      "sha256": "a20e04c1c9f05cef5e0f2578fd1c0932c9f5b6266663cd578ac80ac5eec3d75c",
+      "bytes": 3048
+    },
+    {
+      "path": "blocks/templates/operations.mjs",
+      "sha256": "5bbc3b1423fa0d181ad7d435c8d8ae59e5328b780eb85a7b468cbfd7118e923b",
+      "bytes": 2052
+    },
+    {
+      "path": "blocks/themes/hardline-dark.css",
+      "sha256": "3146dd3e88923502fc8301b191fe31b389a55aee7677a621af7d6451aece284e",
+      "bytes": 1999
+    },
+    {
+      "path": "blocks/themes/hardline-light.css",
+      "sha256": "2558b7c17e90042c59a40e827a7b3effa179b3ccbc9240bae02c895eefacf92b",
+      "bytes": 1999
+    },
+    {
+      "path": "blocks/themes/mono-dark.css",
+      "sha256": "dceef473b92c7d78cb5d5b49517f659d7ef16bdfd80fa5292a3dd4299dd382a4",
+      "bytes": 2047
+    },
+    {
+      "path": "blocks/themes/mono-light.css",
+      "sha256": "5ecd5699244dca1dc24464584d0ad36d53d04f0cb0deb1c34ad4af4bc1745ba4",
+      "bytes": 2047
+    },
+    {
+      "path": "blocks/themes/pulse-dark.css",
+      "sha256": "adc270dde03b1e9a7f363eec6d4c9be04a126321732b23a0bd786097a066ffbd",
+      "bytes": 2110
+    },
+    {
+      "path": "blocks/themes/pulse-light.css",
+      "sha256": "c3a314513b67ead720f78abacd6a49ac934c13936b248d303c1526871a257bae",
+      "bytes": 2110
+    },
+    {
+      "path": "blocks/themes/rivet-dark.css",
+      "sha256": "6a6cc4e7836fa3c2031e267637585443635064bad83be254396ca195e7018f23",
+      "bytes": 2058
+    },
+    {
+      "path": "blocks/themes/rivet-light.css",
+      "sha256": "e37a75e437618dc26748860b82325d5e6593694c7f7280bf49edb6702d4473f9",
+      "bytes": 2058
+    },
+    {
+      "path": "blocks/themes/soft-dark.css",
+      "sha256": "99c17e3cedc5d2d173934974e0e20338a68e1c0780e60841179995cf8bfe1569",
+      "bytes": 2143
+    },
+    {
+      "path": "blocks/themes/soft-light.css",
+      "sha256": "292cad98601c527b971e21862b4451374f5baf2aa3bef9909d4cedffcaba9c18",
+      "bytes": 2143
+    },
+    {
+      "path": "blocks/verticals/commerce/components.mjs",
+      "sha256": "6941cdc4deb9f6c877df43d386509a51724112cfb6cb29c43e31db1254e8040b",
+      "bytes": 14199
+    },
+    {
+      "path": "blocks/verticals/operations/components.mjs",
+      "sha256": "2c5637e2390f85f188e516034f7705438178d9e03fec080ef70234e1ff8d045e",
+      "bytes": 16924
+    },
+    {
+      "path": "catalog.json",
+      "sha256": "dc5cfdae3a065ac51219408f750572b637ad05990affa2b075295b3875e3a951",
+      "bytes": 13314
+    },
+    {
+      "path": "commerce/assets/product-1.svg",
+      "sha256": "04d29fc8e7c0836a93f8b768f3916f616b7d8a181e9139f799b66de0d3d039fe",
+      "bytes": 346
+    },
+    {
+      "path": "commerce/assets/product-2.svg",
+      "sha256": "78e76f709343ff9606ba91915e81e39cb96841fd370f7f9eaef0ac6797f5b0e7",
+      "bytes": 346
+    },
+    {
+      "path": "commerce/commerce.css",
+      "sha256": "282127aa217af4b30cf17ad51f490ab16d5d1b02e05ee2465e13b4c95fdbed38",
+      "bytes": 11351
+    },
+    {
+      "path": "commerce/components.mjs",
+      "sha256": "6941cdc4deb9f6c877df43d386509a51724112cfb6cb29c43e31db1254e8040b",
+      "bytes": 14199
+    },
+    {
+      "path": "commerce/core.css",
+      "sha256": "83522098cc91a4e01dff15f17549e40caa095f45b5452ab039c7aa0578526ae6",
+      "bytes": 5001
+    },
+    {
+      "path": "commerce/demo.mjs",
+      "sha256": "6f08bc14df2fb83ec2cc52b4dd90b05855f4f5e10e707a4c8a1f89fd288dc023",
+      "bytes": 9527
+    },
+    {
+      "path": "commerce/favicon.ico",
+      "sha256": "6634f81cda79bd0256d4e9649586582ff499085b450df7ca107e2b6dc869b0b6",
+      "bytes": 2619
+    },
+    {
+      "path": "commerce/index.html",
+      "sha256": "61c487b5bbf8223fcc0b3c9a994fc5e6371c1488b9a82143eeafa30c83592f39",
+      "bytes": 2414
+    },
+    {
+      "path": "commerce/themes/hardline-dark.css",
+      "sha256": "3146dd3e88923502fc8301b191fe31b389a55aee7677a621af7d6451aece284e",
+      "bytes": 1999
+    },
+    {
+      "path": "commerce/themes/hardline-light.css",
+      "sha256": "2558b7c17e90042c59a40e827a7b3effa179b3ccbc9240bae02c895eefacf92b",
+      "bytes": 1999
+    },
+    {
+      "path": "commerce/themes/mono-dark.css",
+      "sha256": "dceef473b92c7d78cb5d5b49517f659d7ef16bdfd80fa5292a3dd4299dd382a4",
+      "bytes": 2047
+    },
+    {
+      "path": "commerce/themes/mono-light.css",
+      "sha256": "5ecd5699244dca1dc24464584d0ad36d53d04f0cb0deb1c34ad4af4bc1745ba4",
+      "bytes": 2047
+    },
+    {
+      "path": "commerce/themes/pulse-dark.css",
+      "sha256": "adc270dde03b1e9a7f363eec6d4c9be04a126321732b23a0bd786097a066ffbd",
+      "bytes": 2110
+    },
+    {
+      "path": "commerce/themes/pulse-light.css",
+      "sha256": "c3a314513b67ead720f78abacd6a49ac934c13936b248d303c1526871a257bae",
+      "bytes": 2110
+    },
+    {
+      "path": "commerce/themes/rivet-dark.css",
+      "sha256": "6a6cc4e7836fa3c2031e267637585443635064bad83be254396ca195e7018f23",
+      "bytes": 2058
+    },
+    {
+      "path": "commerce/themes/rivet-light.css",
+      "sha256": "e37a75e437618dc26748860b82325d5e6593694c7f7280bf49edb6702d4473f9",
+      "bytes": 2058
+    },
+    {
+      "path": "commerce/themes/soft-dark.css",
+      "sha256": "99c17e3cedc5d2d173934974e0e20338a68e1c0780e60841179995cf8bfe1569",
+      "bytes": 2143
+    },
+    {
+      "path": "commerce/themes/soft-light.css",
+      "sha256": "292cad98601c527b971e21862b4451374f5baf2aa3bef9909d4cedffcaba9c18",
+      "bytes": 2143
+    },
+    {
+      "path": "commerce/wave2.mjs",
+      "sha256": "8024ef59a3900d00c74ab2c3acbde79c3117b62c2fe435e820adbf1cd4cac49a",
+      "bytes": 9992
+    },
+    {
+      "path": "commerce/wave3.mjs",
+      "sha256": "da3dadff63a1ea4f892648229c54781f18c796df867287b9928a9cbab9f3dead",
+      "bytes": 16192
+    },
+    {
+      "path": "commerce/wave4.mjs",
+      "sha256": "5f28c3ef1879036839ef9bafdfb08a619d038751d0667aa43c7baf673a01c588",
+      "bytes": 20521
+    },
+    {
+      "path": "experimental.css",
+      "sha256": "527fc350082e1cf03c83758032b272bc0c3424536ff3015f6f56f38f364ef32a",
+      "bytes": 481
+    },
+    {
+      "path": "index.html",
+      "sha256": "b00c5a5ed9e35aac23034427c79a7e37d44492b7c04f291e964f4d4c035d25bb",
+      "bytes": 3753
+    },
+    {
+      "path": "operations/components.mjs",
+      "sha256": "2c5637e2390f85f188e516034f7705438178d9e03fec080ef70234e1ff8d045e",
+      "bytes": 16924
+    },
+    {
+      "path": "operations/core.css",
+      "sha256": "83522098cc91a4e01dff15f17549e40caa095f45b5452ab039c7aa0578526ae6",
+      "bytes": 5001
+    },
+    {
+      "path": "operations/demo.mjs",
+      "sha256": "294481c6dbee9cc59500ac798a968e78f396ffd9198eb7b9bcacb2d4331192cb",
+      "bytes": 3707
+    },
+    {
+      "path": "operations/favicon.ico",
+      "sha256": "6634f81cda79bd0256d4e9649586582ff499085b450df7ca107e2b6dc869b0b6",
+      "bytes": 2619
+    },
+    {
+      "path": "operations/index.html",
+      "sha256": "f9b021a61ead6c19d39c272cc5e4da7c981b9f268dbbec0288ee3eef24564b4c",
+      "bytes": 2316
+    },
+    {
+      "path": "operations/operations.css",
+      "sha256": "a20e04c1c9f05cef5e0f2578fd1c0932c9f5b6266663cd578ac80ac5eec3d75c",
+      "bytes": 3048
+    },
+    {
+      "path": "operations/themes/hardline-dark.css",
+      "sha256": "3146dd3e88923502fc8301b191fe31b389a55aee7677a621af7d6451aece284e",
+      "bytes": 1999
+    },
+    {
+      "path": "operations/themes/hardline-light.css",
+      "sha256": "2558b7c17e90042c59a40e827a7b3effa179b3ccbc9240bae02c895eefacf92b",
+      "bytes": 1999
+    },
+    {
+      "path": "operations/themes/mono-dark.css",
+      "sha256": "dceef473b92c7d78cb5d5b49517f659d7ef16bdfd80fa5292a3dd4299dd382a4",
+      "bytes": 2047
+    },
+    {
+      "path": "operations/themes/mono-light.css",
+      "sha256": "5ecd5699244dca1dc24464584d0ad36d53d04f0cb0deb1c34ad4af4bc1745ba4",
+      "bytes": 2047
+    },
+    {
+      "path": "operations/themes/pulse-dark.css",
+      "sha256": "adc270dde03b1e9a7f363eec6d4c9be04a126321732b23a0bd786097a066ffbd",
+      "bytes": 2110
+    },
+    {
+      "path": "operations/themes/pulse-light.css",
+      "sha256": "c3a314513b67ead720f78abacd6a49ac934c13936b248d303c1526871a257bae",
+      "bytes": 2110
+    },
+    {
+      "path": "operations/themes/rivet-dark.css",
+      "sha256": "6a6cc4e7836fa3c2031e267637585443635064bad83be254396ca195e7018f23",
+      "bytes": 2058
+    },
+    {
+      "path": "operations/themes/rivet-light.css",
+      "sha256": "e37a75e437618dc26748860b82325d5e6593694c7f7280bf49edb6702d4473f9",
+      "bytes": 2058
+    },
+    {
+      "path": "operations/themes/soft-dark.css",
+      "sha256": "99c17e3cedc5d2d173934974e0e20338a68e1c0780e60841179995cf8bfe1569",
+      "bytes": 2143
+    },
+    {
+      "path": "operations/themes/soft-light.css",
+      "sha256": "292cad98601c527b971e21862b4451374f5baf2aa3bef9909d4cedffcaba9c18",
+      "bytes": 2143
+    },
+    {
+      "path": "site.css",
+      "sha256": "ebedb424ac72fb6d2e3086f76bae0288f42017aa24e23d19e4ba8900d462d85c",
+      "bytes": 5655
+    },
+    {
+      "path": "site.mjs",
+      "sha256": "59b141061d1d26a3c9eceab3a0ce5b740d49f4f659eaabf2cfb1f7e6006c8d49",
+      "bytes": 3250
+    }
+  ],
+  "artifactHash": "8cefa1393906bac9c49946878c52a8bef5d81a2f64e9beb41cf7e26c271fd235"
+}

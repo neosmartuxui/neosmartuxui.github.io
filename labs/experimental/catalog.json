@@ -1,0 +1,423 @@
+{
+  "schema": "neosmartuxui/experimental-gallery@1",
+  "sourceSha": "228fb167a97e5dddf77dd383a774be4779ff19ad",
+  "scope": "public-experimental-demo-only",
+  "productionReady": false,
+  "fixtureData": true,
+  "providerIntegrations": false,
+  "project": "NeoSmartUXUI",
+  "existingCoreComponents": 50,
+  "counts": {
+    "commerce": 35,
+    "operations": 12,
+    "blocks": 7,
+    "templates": 2,
+    "total": 56
+  },
+  "themes": [
+    "hardline-light",
+    "hardline-dark",
+    "soft-light",
+    "soft-dark",
+    "rivet-light",
+    "rivet-dark",
+    "mono-light",
+    "mono-dark",
+    "pulse-light",
+    "pulse-dark"
+  ],
+  "items": [
+    {
+      "id": "commerce.product-price",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.product-card",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.product-gallery",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.cart-line",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.order-summary",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.license-status",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.seat-usage",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.download-entitlement",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.product-detail",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.product-media",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.review-summary",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.license-selector",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.renewal-note",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.pricing-tier",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.coupon",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.checkout-field",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.invoice-details",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.checkout-steps",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.payment-method",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.payment-failure",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.payment-recovery",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.processing-state",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.order-confirmation",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.receipt",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.download-row",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.purchase-history-row",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.license-card",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.invoice-history",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.activation-row",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.update-eligibility",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.renewal-state",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.plan-change",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.ownership-transfer",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.subscription-management",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "commerce.ownership-timeline",
+      "category": "Commerce components",
+      "preview": "commerce",
+      "status": "experimental",
+      "description": "Provider-callback UI, not live billing or licensing"
+    },
+    {
+      "id": "operations.stat-card",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.activation-meter",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.integration-status",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.risk-indicator",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.permission-scope",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.webhook-delivery-log",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.secret-reference",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.release-artifact",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.rollout-stages",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.operation-timeline",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.usage-chart",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "operations.agent-approval-plan",
+      "category": "Operations components",
+      "preview": "operations",
+      "status": "experimental",
+      "description": "Read-only state or simulated operator action"
+    },
+    {
+      "id": "block.trust-strip",
+      "category": "Commerce blocks",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Reusable UI composition with mock data"
+    },
+    {
+      "id": "block.promo-band",
+      "category": "Commerce blocks",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Reusable UI composition with mock data"
+    },
+    {
+      "id": "block.testimonials",
+      "category": "Commerce blocks",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Reusable UI composition with mock data"
+    },
+    {
+      "id": "block.guarantee",
+      "category": "Commerce blocks",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Reusable UI composition with mock data"
+    },
+    {
+      "id": "block.plan-comparison",
+      "category": "Commerce blocks",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Reusable UI composition with mock data"
+    },
+    {
+      "id": "block.bundle-builder",
+      "category": "Commerce blocks",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Reusable UI composition with mock data"
+    },
+    {
+      "id": "block.account-nav",
+      "category": "Commerce blocks",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Reusable UI composition with mock data"
+    },
+    {
+      "id": "template.license-ops-dashboard",
+      "category": "Operational templates",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Composed example screen with synthetic records"
+    },
+    {
+      "id": "template.release-operations-console",
+      "category": "Operational templates",
+      "preview": "blocks",
+      "status": "experimental",
+      "description": "Composed example screen with synthetic records"
+    }
+  ]
+}

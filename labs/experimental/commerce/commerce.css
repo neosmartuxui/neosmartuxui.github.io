@@ -1,0 +1,98 @@
+/* Commerce uses NeoSmartUXUI's existing theme tokens; no separate flavor or hardcoded brand colors. */
+.ns-commerce { color:var(--ns-color-content-primary); font:var(--ns-font-size-body) var(--ns-font-family-body); min-inline-size:0; }
+.ns-commerce * { box-sizing:border-box; }
+.ns-commerce-title { margin:0; font-weight:var(--ns-font-weight-strong); line-height:1.2; overflow-wrap:anywhere; }
+.ns-commerce-muted { color:var(--ns-color-content-secondary); overflow-wrap:anywhere; }
+.ns-commerce-price { display:flex; flex-wrap:wrap; gap:.5rem; align-items:baseline; }
+.ns-commerce-price strong { font-size:clamp(1.3rem, 2vw + .9rem, 2.4rem); line-height:1.1; }
+.ns-commerce-price del,.ns-commerce-price small { color:var(--ns-color-content-secondary); }
+.ns-commerce-product-card { display:grid; gap:.65rem; padding:var(--ns-space-surface-block) var(--ns-space-surface-inline); }
+.ns-commerce-product-card p { margin:0; }
+.ns-commerce a { color:inherit; text-underline-offset:.18em; }
+.ns-commerce-product-art, .ns-commerce-gallery-main { display:grid; place-items:center; background:var(--ns-color-surface-interactive); border:var(--ns-border-surface-width) solid var(--ns-color-border-strong); border-radius:var(--ns-radius-surface); aspect-ratio:4/3; overflow:hidden; }
+.ns-commerce-product-art img, .ns-commerce-gallery-main img { width:100%; height:100%; object-fit:contain; }
+.ns-commerce-product-art strong { font-size:2.5rem; }
+.ns-commerce-product-gallery { display:grid; gap:.65rem; }
+.ns-commerce-gallery-choices { display:flex; flex-wrap:wrap; gap:.5rem; }
+.ns-commerce-gallery-choices button { min-height:var(--ns-size-control-minimum); padding:.35rem .7rem; color:var(--ns-color-content-primary); background:var(--ns-color-surface-panel); border:var(--ns-border-control-width) solid var(--ns-color-border-strong); border-radius:var(--ns-radius-control); font:inherit; cursor:pointer; }
+.ns-commerce-gallery-choices button[aria-pressed="true"] { color:var(--ns-color-action-primary-content); background:var(--ns-color-action-primary-surface); box-shadow:var(--ns-depth-rest-x) var(--ns-depth-rest-y) 0 var(--ns-color-border-strong); }
+.ns-commerce a:focus-visible,.ns-commerce button:focus-visible { outline:var(--ns-focus-ring-width) solid var(--ns-color-focus-ring); outline-offset:var(--ns-focus-ring-offset); }
+.ns-commerce-cart-line { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:.65rem; padding:var(--ns-space-surface-block) var(--ns-space-surface-inline); }
+.ns-commerce-cart-line p { margin:.25rem 0; }
+.ns-commerce-cart-meta { display:flex; flex-wrap:wrap; align-items:center; gap:1rem; }
+.ns-commerce-order-summary,.ns-commerce-license-status,.ns-commerce-seat-usage,.ns-commerce-entitlement { display:grid; gap:.65rem; }
+.ns-commerce-summary-list { display:grid; gap:.65rem; margin:0; }
+.ns-commerce-summary-row { display:flex; justify-content:space-between; gap:.75rem; align-items:start; }
+.ns-commerce-summary-row dt { color:var(--ns-color-content-secondary); }
+.ns-commerce-summary-row dd { margin:0; font-variant-numeric:tabular-nums; font-weight:var(--ns-font-weight-emphasis); }
+.ns-commerce-summary-total { padding-top:.7rem; margin-top:.3rem; border-top:var(--ns-border-annotation-width) solid var(--ns-color-border-strong); font-weight:var(--ns-font-weight-strong); }
+.ns-commerce-status-line { display:flex; gap:.6rem; align-items:center; flex-wrap:wrap; }
+.ns-commerce-seat-usage progress { width:100%; height:1rem; accent-color:var(--ns-color-action-primary-surface); }
+.ns-commerce-entitlement .ns-button { justify-self:start; }
+.ns-commerce [data-state="error"] { border-color:var(--ns-color-state-error); }
+.ns-commerce [role="alert"] { border-inline-start:var(--ns-border-control-width) solid var(--ns-color-state-error); padding-inline-start:.5rem; color:var(--ns-color-content-primary); }
+.ns-commerce button:disabled { opacity:var(--ns-opacity-disabled); cursor:not-allowed; }
+@media(max-width:34rem) { .ns-commerce-cart-line { grid-template-columns:1fr; } }
+@media(prefers-reduced-motion:reduce) { .ns-commerce button { transition-duration:1ms !important; } }
+@media(forced-colors:active) { .ns-commerce-product-art,.ns-commerce-gallery-main,.ns-commerce-gallery-choices button { color:CanvasText; background:Canvas; border-color:CanvasText; } .ns-commerce-gallery-choices button[aria-pressed="true"] { outline:2px solid Highlight; box-shadow:none; } }
+
+/* Wave 2 catalog and offer patterns consume existing Theme tokens. */
+.ns-commerce-detail,.ns-commerce-media,.ns-commerce-reviews,.ns-commerce-license-selector,.ns-commerce-renewal,.ns-commerce-pricing-tier { display:grid; gap:.65rem; padding:var(--ns-space-surface-block) var(--ns-space-surface-inline); min-width:0; }
+.ns-commerce-detail-image { max-width:100%; width:100%; aspect-ratio:4/3; object-fit:contain; }
+.ns-commerce-media-preview img { display:block; max-width:100%; max-height:18rem; margin-inline:auto; }
+.ns-commerce-media-tabs { display:flex; gap:.5rem; flex-wrap:wrap; }
+.ns-commerce-media-tabs button[aria-selected=true] { color:var(--ns-color-action-primary-content); background:var(--ns-color-action-primary-surface); }
+.ns-commerce-media-code { white-space:pre-wrap; overflow-wrap:anywhere; overflow:auto; }
+.ns-commerce-media-files { margin:.35rem 0; padding-inline-start:1.5rem; }
+.ns-commerce-review-head { display:flex; align-items:center; gap:.6rem; flex-wrap:wrap; }
+.ns-commerce-reviews meter { max-width:100%; width:100%; accent-color:var(--ns-color-action-primary-surface); }
+.ns-commerce-license-selector { border:var(--ns-border-surface-width) solid var(--ns-color-border-strong); }
+.ns-commerce-license-options { display:grid; gap:.65rem; }
+.ns-commerce-license-option { display:flex; gap:.65rem; align-items:start; cursor:pointer; }
+.ns-commerce-license-option input { margin-block-start:.35rem; accent-color:var(--ns-color-action-primary-surface); }
+.ns-commerce-license-option > span { display:grid; gap:.3rem; }
+.ns-commerce-pricing-tier ul { margin:0; padding-inline-start:1.4rem; }
+.ns-commerce-pricing-tier .ns-button { justify-self:start; }
+
+/* Checkout UI uses existing Core theme variables, no checkout gateway SDK styles. */
+.ns-commerce-coupon,.ns-commerce-checkout-field,.ns-commerce-invoice-details,.ns-commerce-checkout-steps,.ns-commerce-payment-method,.ns-commerce-payment-failure,.ns-commerce-payment-recovery,.ns-commerce-processing-state,.ns-commerce-order-confirmation,.ns-commerce-receipt {display:grid;gap:.65rem;padding:var(--ns-space-surface-block) var(--ns-space-surface-inline);min-inline-size:0;}
+.ns-commerce-coupon .ns-commerce-field-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:.6rem;align-items:center;}
+.ns-commerce-input{min-width:0;min-height:var(--ns-size-control-minimum);font:inherit;color:var(--ns-color-content-primary);background:var(--ns-color-surface-interactive);border:var(--ns-border-control-width) solid var(--ns-color-border-strong);border-radius:var(--ns-radius-control);padding:.65rem;}
+.ns-commerce-input:focus-visible,.ns-commerce input[type=radio]:focus-visible{outline:var(--ns-focus-ring-width) solid var(--ns-color-focus-ring);outline-offset:var(--ns-focus-ring-offset);}
+.ns-commerce-input[aria-invalid=true]{border-color:var(--ns-color-state-error);}
+.ns-commerce-message{margin:0;min-height:1.5em;}
+.ns-commerce-message[data-tone=error]{color:var(--ns-color-content-primary);border-inline-start:var(--ns-border-control-width) solid var(--ns-color-state-error);padding-inline-start:.5rem;}
+.ns-commerce-checkout-progress{margin:0;display:flex;gap:.5rem;flex-wrap:wrap;padding-inline-start:1.5rem;}
+.ns-commerce-checkout-progress li{padding:.5rem .6rem;border:var(--ns-border-annotation-width) solid var(--ns-color-border-strong);}
+.ns-commerce-checkout-progress [aria-current=step]{color:var(--ns-color-action-primary-content);background:var(--ns-color-action-primary-surface);font-weight:var(--ns-font-weight-strong);}
+.ns-commerce-payment-option{display:flex;gap:.65rem;align-items:start;padding:.65rem;border:var(--ns-border-annotation-width) solid var(--ns-color-border-strong);cursor:pointer;}
+.ns-commerce-payment-option:has(input:checked){color:var(--ns-color-action-primary-content);background:var(--ns-color-action-primary-surface);}
+.ns-commerce-payment-option span{display:grid;gap:.25rem;}
+.ns-commerce-payment-option .ns-commerce-muted{margin:0;}
+.ns-commerce-payment-option input{margin-block-start:.3rem;accent-color:var(--ns-color-action-primary-surface);}
+.ns-commerce-payment-failure{border-color:var(--ns-color-state-error);}
+.ns-commerce-processing-state [role=status]{display:grid;gap:.5rem;}
+.ns-commerce-invoice-details .ns-button,.ns-commerce-payment-failure .ns-button,.ns-commerce-payment-recovery .ns-button{justify-self:start;}
+@media(max-width:34rem){.ns-commerce-coupon .ns-commerce-field-row{grid-template-columns:1fr;}.ns-commerce-checkout-progress{display:grid;}}
+@media(prefers-reduced-motion:reduce){.ns-commerce-processing-state{scroll-behavior:auto;}}
+@media(forced-colors:active){.ns-commerce-checkout-progress [aria-current=step],.ns-commerce-payment-option:has(input:checked){outline:2px solid Highlight;}}
+
+/* Keep standalone form primitives visible across every Theme and forced-colors mode. */
+.ns-commerce-checkout-field {border:var(--ns-border-annotation-width) solid var(--ns-color-border-strong);}
+
+/* Wave 4 licensing/account surfaces inherit all existing NeoSmartUXUI Theme tokens. */
+.ns-commerce-account-row,.ns-commerce-account-card,.ns-commerce-account-list,.ns-commerce-operation {display:grid;gap:.65rem;padding:var(--ns-space-surface-block) var(--ns-space-surface-inline);min-inline-size:0;overflow-wrap:anywhere;}
+.ns-commerce-account-row .ns-commerce-entitlement,.ns-commerce-account-card .ns-commerce-license-status{border:var(--ns-border-annotation-width) solid var(--ns-color-border-strong);padding:.65rem;}
+.ns-commerce-account-items,.ns-commerce-timeline-list {margin:0;padding-inline-start:1.4rem;display:grid;gap:.6rem;}
+.ns-commerce-account-item,.ns-commerce-timeline-entry {padding:.6rem;border-inline-start:var(--ns-border-control-width) solid var(--ns-color-border-strong);display:grid;gap:.25rem;min-width:0;}
+.ns-commerce-account-actions {display:flex;flex-wrap:wrap;gap:.6rem;}
+.ns-commerce-operation .ns-commerce-input {width:100%;min-width:0;}
+.ns-commerce-transfer-form {display:grid;gap:.45rem;min-width:0;}
+.ns-commerce-account-card .ns-commerce-summary-row dd {overflow-wrap:anywhere;}
+.ns-commerce-action-message {margin:0;min-height:1.5em;}
+.ns-commerce-action-message[data-tone=error]{border-inline-start:var(--ns-border-control-width) solid var(--ns-color-state-error);padding-inline-start:.5rem;}
+.ns-commerce-account-card .ns-badge,.ns-commerce-account-row .ns-badge {justify-self:start;}
+.ns-commerce-operation .ns-button:disabled{opacity:var(--ns-opacity-disabled);}
+.ns-commerce-timeline-entry{border-block-end:var(--ns-border-annotation-width) solid var(--ns-color-border-strong);}
+@media(max-width:34rem){.ns-commerce-account-actions{display:grid;}.ns-commerce-account-actions .ns-button{width:100%;}}
+@media(forced-colors:active){.ns-commerce-timeline-entry,.ns-commerce-account-item{border-inline-color:CanvasText;}}
