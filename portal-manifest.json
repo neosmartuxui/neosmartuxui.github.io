@@ -1,0 +1,94 @@
+{
+  "schema": "neosmartuxui/portal-artifact@1",
+  "sourceSha": "aab870401f9275a0b8a003a5a828ca4d9f21f297",
+  "sections": [
+    "/",
+    "/components/",
+    "/themes/",
+    "/blocks/",
+    "/templates/",
+    "/labs/",
+    "/flavors/",
+    "/docs/"
+  ],
+  "existingRoutesPreserved": [
+    "/foundry/",
+    "/studio/",
+    "/labs/experimental/",
+    "/flavors/hardline/",
+    "/flavors/rivet/",
+    "/flavors/soft/",
+    "/flavors/mono/",
+    "/flavors/pulse/"
+  ],
+  "scope": "public-site-navigation",
+  "privatePackageIncluded": false,
+  "githubActionsUsed": false,
+  "productionPackageReleased": false,
+  "counts": {
+    "core": 50,
+    "commerce": 35,
+    "operations": 12,
+    "blocks": 7,
+    "templates": 2,
+    "total": 106
+  },
+  "files": [
+    {
+      "path": "blocks/index.html",
+      "sha256": "13de1e87d09d256d12a89899da80636824cabb5e70bcb62931c69ee7dd900f17",
+      "bytes": 3911
+    },
+    {
+      "path": "components/catalog.json",
+      "sha256": "c1b902531d35c2bc9a1fcf4351cd6f20d12b2dc668051e08e6c6b182b4f2968a",
+      "bytes": 24278
+    },
+    {
+      "path": "components/index.html",
+      "sha256": "ef4595da253e4ef9459ef425b8a65c66f1b23265dab6fe592f665d5c07715425",
+      "bytes": 3357
+    },
+    {
+      "path": "docs/index.html",
+      "sha256": "ede9432bf900e021ee1f422c0b3fbeb61c2bb4bbc4adf0590579e92ffd068ad9",
+      "bytes": 3986
+    },
+    {
+      "path": "flavors/index.html",
+      "sha256": "fde4904461ecd42b8583f40458689a0d96694ac96aa7fc86b9f2a2a86131c2a9",
+      "bytes": 4677
+    },
+    {
+      "path": "index.html",
+      "sha256": "04c977f794791de2c5ec426323899b881113c9a9035a3454fb86ada7e52308a8",
+      "bytes": 11167
+    },
+    {
+      "path": "labs/index.html",
+      "sha256": "bbede32c35f85d3c5b321398cf888c0ec20ce935cefc1866c7ac7f3468ca468a",
+      "bytes": 4298
+    },
+    {
+      "path": "portal.css",
+      "sha256": "38a3443a40b71876fa5ba8ff379b23fe06872954604b441469b34cf215eae163",
+      "bytes": 18326
+    },
+    {
+      "path": "portal.mjs",
+      "sha256": "8135533bfeb7fcefb2e370bf33339063330d0a53105f00ef9b109d6ccb18b9d9",
+      "bytes": 3222
+    },
+    {
+      "path": "templates/index.html",
+      "sha256": "c35f9933281569031bd6ad2c1345e7f7f084242c0751d6fc9911f16c06ae22b6",
+      "bytes": 3520
+    },
+    {
+      "path": "themes/index.html",
+      "sha256": "bea306e49e9609c22d86b343a0740fec237b86664794c7939a84c0cc3989465e",
+      "bytes": 6609
+    }
+  ],
+  "artifactHash": "2fe42ccf1f43d3c4381dabc49ba60d6b4b97594d73185968b90c49f06bf51fc9"
+}

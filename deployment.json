@@ -1,6 +1,9 @@
 {
   "schema": "neosmartuxui/deployment-record@1",
   "sourceRepository": "neosmartuxui/neosmartuxui",
-  "sourceSha": "ff6897eb0db5d86ab28847b91bac76af26416891",
-  "artifact": "foundry"
+  "sourceSha": "aab870401f9275a0b8a003a5a828ca4d9f21f297",
+  "artifact": "portal",
+  "componentProof": "historical Foundry at /foundry/deployment.json",
+  "productionPackageReady": false,
+  "githubActionsUsed": false
 }

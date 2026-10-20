@@ -1,0 +1,758 @@
+{
+  "schema": "neosmartuxui/portal-catalog@1",
+  "sourceSha": "aab870401f9275a0b8a003a5a828ca4d9f21f297",
+  "scope": "mixed-maturity",
+  "productionReady": false,
+  "counts": {
+    "core": 50,
+    "commerce": 35,
+    "operations": 12,
+    "blocks": 7,
+    "templates": 2,
+    "total": 106
+  },
+  "items": [
+    {
+      "id": "core.button",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#button-slice"
+    },
+    {
+      "id": "core.checkbox",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#checkbox-slice"
+    },
+    {
+      "id": "core.input",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#input-slice"
+    },
+    {
+      "id": "core.radio",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#radio-slice"
+    },
+    {
+      "id": "core.switch",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#switch-slice"
+    },
+    {
+      "id": "core.tabs",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#tabs-slice"
+    },
+    {
+      "id": "core.textarea",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#textarea-slice"
+    },
+    {
+      "id": "core.select",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#select-slice"
+    },
+    {
+      "id": "core.card",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#card-slice"
+    },
+    {
+      "id": "core.badge",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#badge-slice"
+    },
+    {
+      "id": "core.alert",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#alert-slice"
+    },
+    {
+      "id": "core.field",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#field-slice"
+    },
+    {
+      "id": "core.breadcrumb",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#breadcrumb-slice"
+    },
+    {
+      "id": "core.pagination",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#pagination-slice"
+    },
+    {
+      "id": "core.segmented-control",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#segmented-control-slice"
+    },
+    {
+      "id": "core.tooltip",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#tooltip-slice"
+    },
+    {
+      "id": "core.combobox",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#combobox-slice"
+    },
+    {
+      "id": "core.accordion",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#accordion-slice"
+    },
+    {
+      "id": "core.label",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#label-slice"
+    },
+    {
+      "id": "core.button-group",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#button-group-slice"
+    },
+    {
+      "id": "core.input-group",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#input-group-slice"
+    },
+    {
+      "id": "core.number-field",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#number-field-slice"
+    },
+    {
+      "id": "core.toggle",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#toggle-slice"
+    },
+    {
+      "id": "core.toggle-group",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#toggle-group-slice"
+    },
+    {
+      "id": "core.slider",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#slider-slice"
+    },
+    {
+      "id": "core.progress",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#progress-slice"
+    },
+    {
+      "id": "core.spinner",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#spinner-slice"
+    },
+    {
+      "id": "core.separator",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#separator-slice"
+    },
+    {
+      "id": "core.multi-select",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#multi-select-slice"
+    },
+    {
+      "id": "core.input-otp",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#input-otp-slice"
+    },
+    {
+      "id": "core.file-upload",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#file-upload-slice"
+    },
+    {
+      "id": "core.color-picker",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#color-picker-slice"
+    },
+    {
+      "id": "core.date-picker",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#date-picker-slice"
+    },
+    {
+      "id": "core.time-picker",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#time-picker-slice"
+    },
+    {
+      "id": "core.calendar",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#calendar-slice"
+    },
+    {
+      "id": "core.dialog",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#dialog-slice"
+    },
+    {
+      "id": "core.alert-dialog",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#alert-dialog-slice"
+    },
+    {
+      "id": "core.drawer",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#drawer-slice"
+    },
+    {
+      "id": "core.popover",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#popover-slice"
+    },
+    {
+      "id": "core.hover-card",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#hover-card-slice"
+    },
+    {
+      "id": "core.dropdown-menu",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#dropdown-menu-slice"
+    },
+    {
+      "id": "core.context-menu",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#context-menu-slice"
+    },
+    {
+      "id": "core.menubar",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#menubar-slice"
+    },
+    {
+      "id": "core.navigation-menu",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#navigation-menu-slice"
+    },
+    {
+      "id": "core.toast",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#toast-slice"
+    },
+    {
+      "id": "core.table",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#table-slice"
+    },
+    {
+      "id": "core.data-grid",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#data-grid-slice"
+    },
+    {
+      "id": "core.item",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#item-slice"
+    },
+    {
+      "id": "core.list",
+      "kind": "Core",
+      "status": "Public proof",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#list-slice"
+    },
+    {
+      "id": "core.description-list",
+      "kind": "Core",
+      "status": "Implemented",
+      "description": "Canonical interactive Core component. Explore its states in Foundry.",
+      "href": "/foundry/#description-list-slice"
+    },
+    {
+      "id": "commerce.product-price",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.product-card",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.product-gallery",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.cart-line",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.order-summary",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.license-status",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.seat-usage",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.download-entitlement",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.product-detail",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.product-media",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.review-summary",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.license-selector",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.renewal-note",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.pricing-tier",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.coupon",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.checkout-field",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.invoice-details",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.checkout-steps",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.payment-method",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.payment-failure",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.payment-recovery",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.processing-state",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.order-confirmation",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.receipt",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.download-row",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.purchase-history-row",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.license-card",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.invoice-history",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.activation-row",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.update-eligibility",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.renewal-state",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.plan-change",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.ownership-transfer",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.subscription-management",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "commerce.ownership-timeline",
+      "kind": "Commerce",
+      "status": "Experimental",
+      "description": "Synthetic provider-callback Commerce interface",
+      "href": "/labs/experimental/commerce/"
+    },
+    {
+      "id": "operations.stat-card",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.activation-meter",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.integration-status",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.risk-indicator",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.permission-scope",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.webhook-delivery-log",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.secret-reference",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.release-artifact",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.rollout-stages",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.operation-timeline",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.usage-chart",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "operations.agent-approval-plan",
+      "kind": "Operations",
+      "status": "Experimental",
+      "description": "Fixture-powered operations interface",
+      "href": "/labs/experimental/operations/"
+    },
+    {
+      "id": "block.trust-strip",
+      "kind": "Block",
+      "status": "Experimental",
+      "description": "Reusable UI composition",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "block.promo-band",
+      "kind": "Block",
+      "status": "Experimental",
+      "description": "Reusable UI composition",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "block.testimonials",
+      "kind": "Block",
+      "status": "Experimental",
+      "description": "Reusable UI composition",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "block.guarantee",
+      "kind": "Block",
+      "status": "Experimental",
+      "description": "Reusable UI composition",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "block.plan-comparison",
+      "kind": "Block",
+      "status": "Experimental",
+      "description": "Reusable UI composition",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "block.bundle-builder",
+      "kind": "Block",
+      "status": "Experimental",
+      "description": "Reusable UI composition",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "block.account-nav",
+      "kind": "Block",
+      "status": "Experimental",
+      "description": "Reusable UI composition",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "template.license-ops-dashboard",
+      "kind": "Template",
+      "status": "Experimental",
+      "description": "Composed application screen using synthetic records",
+      "href": "/labs/experimental/blocks/"
+    },
+    {
+      "id": "template.release-operations-console",
+      "kind": "Template",
+      "status": "Experimental",
+      "description": "Composed application screen using synthetic records",
+      "href": "/labs/experimental/blocks/"
+    }
+  ]
+}
