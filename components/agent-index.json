@@ -1,0 +1,4938 @@
+{
+  "schema": "neosmartuxui/agent-capabilities@1",
+  "sourceSha": "b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba",
+  "origin": "canonical-registry-and-shipping-source",
+  "productionPackageReleased": false,
+  "inventory": {
+    "Core": 50,
+    "Commerce": 35,
+    "Operations": 12,
+    "Block": 7,
+    "Template": 2,
+    "total": 106
+  },
+  "items": [
+    {
+      "id": "core.button",
+      "kind": "Core",
+      "route": "/components/core/button/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/button.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/button.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/button.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "loading",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.border.strong",
+        "border.control.width",
+        "radius.control",
+        "space.control.inline",
+        "space.control.block",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#button-slice",
+        "selector": "#button-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "enabled",
+          "kind": "button",
+          "operation": "aria-disabled",
+          "value": "false"
+        },
+        {
+          "id": "disabled",
+          "kind": "button",
+          "operation": "aria-disabled",
+          "value": "true"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.checkbox",
+      "kind": "Core",
+      "route": "/components/core/checkbox/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/checkbox.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/checkbox.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/checkbox.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "unchecked",
+        "checked",
+        "indeterminate",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.border.default",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.state.error",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#checkbox-slice",
+        "selector": "#checkbox-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "unchecked",
+          "kind": "button",
+          "operation": "checkbox",
+          "value": "unchecked"
+        },
+        {
+          "id": "checked",
+          "kind": "button",
+          "operation": "checkbox",
+          "value": "checked"
+        },
+        {
+          "id": "mixed",
+          "kind": "button",
+          "operation": "checkbox",
+          "value": "indeterminate"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.input",
+      "kind": "Core",
+      "route": "/components/core/input/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/input.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/input.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/input.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "empty",
+        "filled",
+        "invalid",
+        "read-only",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "border.control.width",
+        "radius.control",
+        "space.control.inline",
+        "space.control.block",
+        "size.control.minimum",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "motion.standard.duration",
+        "motion.standard.easing"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#input-slice",
+        "selector": "#input-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "value",
+          "kind": "text",
+          "operation": "input",
+          "value": "Preview text"
+        },
+        {
+          "id": "clear",
+          "kind": "button",
+          "operation": "input",
+          "value": ""
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.radio",
+      "kind": "Core",
+      "route": "/components/core/radio/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/radio.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/radio.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/radio.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "unchecked",
+        "checked",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.border.default",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.state.error",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#radio-slice",
+        "selector": "#radio-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.switch",
+      "kind": "Core",
+      "route": "/components/core/switch/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/switch.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/switch.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/switch.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "off",
+        "on",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.border.strong",
+        "color.state.error",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#switch-slice",
+        "selector": "#switch-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "off",
+          "kind": "button",
+          "operation": "switch",
+          "value": "off"
+        },
+        {
+          "id": "on",
+          "kind": "button",
+          "operation": "switch",
+          "value": "on"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.tabs",
+      "kind": "Core",
+      "route": "/components/core/tabs/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/tabs.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/tabs.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/tabs.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "unselected",
+        "selected",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "border.control.width",
+        "radius.control",
+        "space.control.inline",
+        "space.control.block",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "font.family.body",
+        "font.size.label",
+        "font.weight.emphasis",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#tabs-slice",
+        "selector": "#tabs-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "overview",
+          "kind": "button",
+          "operation": "tab",
+          "value": "#tab-auto-overview"
+        },
+        {
+          "id": "details",
+          "kind": "button",
+          "operation": "tab",
+          "value": "#tab-auto-details"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.textarea",
+      "kind": "Core",
+      "route": "/components/core/textarea/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/textarea.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/textarea.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/textarea.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "empty",
+        "filled",
+        "invalid",
+        "read-only",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "border.control.width",
+        "radius.control",
+        "space.control.inline",
+        "space.control.block",
+        "size.control.minimum",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "motion.standard.duration",
+        "motion.standard.easing"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#textarea-slice",
+        "selector": "#textarea-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "value",
+          "kind": "textarea",
+          "operation": "input",
+          "value": "First line\nSecond line"
+        },
+        {
+          "id": "clear",
+          "kind": "button",
+          "operation": "input",
+          "value": ""
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.select",
+      "kind": "Core",
+      "route": "/components/core/select/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/select.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/select.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/select.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "selected",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "border.control.width",
+        "radius.control",
+        "space.control.inline",
+        "space.control.block",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#select-slice",
+        "selector": "#select-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "alpha",
+          "kind": "button",
+          "operation": "select",
+          "value": "alpha"
+        },
+        {
+          "id": "beta",
+          "kind": "button",
+          "operation": "select",
+          "value": "beta"
+        },
+        {
+          "id": "gamma",
+          "kind": "button",
+          "operation": "select",
+          "value": "gamma"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.card",
+      "kind": "Core",
+      "route": "/components/core/card/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/card.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/card.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/card.json",
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "depth.rest.x",
+        "depth.rest.y",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.strong"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#card-slice",
+        "selector": "#card-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.badge",
+      "kind": "Core",
+      "route": "/components/core/badge/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/badge.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/badge.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/badge.json",
+      "states": [
+        "rest",
+        "neutral",
+        "info",
+        "success",
+        "warning",
+        "error"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.inverse",
+        "color.border.strong",
+        "color.state.info",
+        "color.state.success",
+        "color.state.warning",
+        "color.state.error",
+        "space.annotation.inline",
+        "space.annotation.block",
+        "border.annotation.width",
+        "radius.annotation",
+        "font.family.body",
+        "font.size.label",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#badge-slice",
+        "selector": "#badge-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "neutral",
+          "kind": "button",
+          "operation": "tone",
+          "value": "neutral"
+        },
+        {
+          "id": "info",
+          "kind": "button",
+          "operation": "tone",
+          "value": "info"
+        },
+        {
+          "id": "success",
+          "kind": "button",
+          "operation": "tone",
+          "value": "success"
+        },
+        {
+          "id": "warning",
+          "kind": "button",
+          "operation": "tone",
+          "value": "warning"
+        },
+        {
+          "id": "error",
+          "kind": "button",
+          "operation": "tone",
+          "value": "error"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.alert",
+      "kind": "Core",
+      "route": "/components/core/alert/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/alert.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/alert.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/alert.json",
+      "states": [
+        "rest",
+        "neutral",
+        "info",
+        "success",
+        "warning",
+        "error"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.state.info",
+        "color.state.success",
+        "color.state.warning",
+        "color.state.error",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "depth.rest.x",
+        "depth.rest.y",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.strong"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#alert-slice",
+        "selector": "#alert-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.field",
+      "kind": "Core",
+      "route": "/components/core/field/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/field.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/field.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/field.json",
+      "states": [
+        "rest",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.content.primary",
+        "color.content.secondary",
+        "color.state.error",
+        "space.field.gap",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#field-slice",
+        "selector": "#field-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.breadcrumb",
+      "kind": "Core",
+      "route": "/components/core/breadcrumb/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/breadcrumb.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/breadcrumb.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/breadcrumb.json",
+      "states": [
+        "rest",
+        "current"
+      ],
+      "dependencies": [
+        "color.content.primary",
+        "color.content.secondary",
+        "color.focus.ring",
+        "space.navigation.gap",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "font.family.body",
+        "font.size.navigation",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#breadcrumb-slice",
+        "selector": "#breadcrumb-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.pagination",
+      "kind": "Core",
+      "route": "/components/core/pagination/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/pagination.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/pagination.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/pagination.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "current",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.navigation.gap",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.release.duration",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.navigation",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#pagination-slice",
+        "selector": "#pagination-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.segmented-control",
+      "kind": "Core",
+      "route": "/components/core/segmented-control/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/segmented-control.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/segmented-control.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/segmented-control.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "selected",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.navigation.gap",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.release.duration",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.label",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#segmented-control-slice",
+        "selector": "#segmented-control-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.tooltip",
+      "kind": "Core",
+      "route": "/components/core/tooltip/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/tooltip.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/tooltip.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/tooltip.json",
+      "states": [
+        "closed",
+        "open",
+        "dismissed"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.border.strong",
+        "space.annotation.inline",
+        "space.annotation.block",
+        "border.annotation.width",
+        "radius.annotation",
+        "depth.rest.x",
+        "depth.rest.y",
+        "motion.standard.duration",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#tooltip-slice",
+        "selector": "#tooltip-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.combobox",
+      "kind": "Core",
+      "route": "/components/core/combobox/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/combobox.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/combobox.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/combobox.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "closed",
+        "open",
+        "query-empty",
+        "query-filled",
+        "highlighted",
+        "selected",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.control.width",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#combobox-slice",
+        "selector": "#combobox-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.accordion",
+      "kind": "Core",
+      "route": "/components/core/accordion/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/accordion.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/accordion.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/accordion.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "closed",
+        "open",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.control.width",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#accordion-slice",
+        "selector": "#accordion-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.label",
+      "kind": "Core",
+      "route": "/components/core/label/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/label.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/label.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/label.json",
+      "states": [
+        "rest",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.content.primary",
+        "color.content.secondary",
+        "font.family.body",
+        "font.size.label",
+        "font.weight.emphasis",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#label-slice",
+        "selector": "#label-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.button-group",
+      "kind": "Core",
+      "route": "/components/core/button-group/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/button-group.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/button-group.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/button-group.json",
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "space.control.inline",
+        "border.control.width",
+        "radius.control"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#button-group-slice",
+        "selector": "#button-group-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.input-group",
+      "kind": "Core",
+      "route": "/components/core/input-group/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/input-group.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/input-group.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/input-group.json",
+      "states": [
+        "rest",
+        "focus-within",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "motion.standard.duration",
+        "motion.standard.easing"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#input-group-slice",
+        "selector": "#input-group-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.number-field",
+      "kind": "Core",
+      "route": "/components/core/number-field/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/number-field.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/number-field.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/number-field.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "empty",
+        "filled",
+        "invalid",
+        "read-only",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#number-field-slice",
+        "selector": "#number-field-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.toggle",
+      "kind": "Core",
+      "route": "/components/core/toggle/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/toggle.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/toggle.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/toggle.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "off",
+        "on",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.border.strong",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.label",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#toggle-slice",
+        "selector": "#toggle-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.toggle-group",
+      "kind": "Core",
+      "route": "/components/core/toggle-group/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/toggle-group.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/toggle-group.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/toggle-group.json",
+      "states": [
+        "rest",
+        "none-selected",
+        "selected",
+        "disabled"
+      ],
+      "dependencies": [
+        "space.control.inline",
+        "space.control.block",
+        "color.focus.ring",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#toggle-group-slice",
+        "selector": "#toggle-group-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.slider",
+      "kind": "Core",
+      "route": "/components/core/slider/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/slider.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/slider.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/slider.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.border.default",
+        "color.border.strong",
+        "color.focus.ring",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#slider-slice",
+        "selector": "#slider-slice"
+      },
+      "providerAuthority": null,
+      "controls": [
+        {
+          "id": "low",
+          "kind": "button",
+          "operation": "range",
+          "value": "25"
+        },
+        {
+          "id": "mid",
+          "kind": "button",
+          "operation": "range",
+          "value": "50"
+        },
+        {
+          "id": "high",
+          "kind": "button",
+          "operation": "range",
+          "value": "75"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.progress",
+      "kind": "Core",
+      "route": "/components/core/progress/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/progress.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/progress.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/progress.json",
+      "states": [
+        "rest",
+        "determinate",
+        "indeterminate",
+        "complete"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.action.primary.surface",
+        "color.border.default",
+        "border.control.width",
+        "radius.control",
+        "motion.standard.duration",
+        "motion.standard.easing"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#progress-slice",
+        "selector": "#progress-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.spinner",
+      "kind": "Core",
+      "route": "/components/core/spinner/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/spinner.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/spinner.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/spinner.json",
+      "states": [
+        "active"
+      ],
+      "dependencies": [
+        "color.action.primary.surface",
+        "color.border.default",
+        "motion.standard.duration",
+        "motion.standard.easing"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#spinner-slice",
+        "selector": "#spinner-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.separator",
+      "kind": "Core",
+      "route": "/components/core/separator/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/separator.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/separator.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/separator.json",
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "color.border.default",
+        "border.surface.width"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#separator-slice",
+        "selector": "#separator-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.multi-select",
+      "kind": "Core",
+      "route": "/components/core/multi-select/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/multi-select.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/multi-select.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/multi-select.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "closed",
+        "open",
+        "none-selected",
+        "selected",
+        "highlighted",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "color.surface.panel",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#multi-select-slice",
+        "selector": "#multi-select-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.input-otp",
+      "kind": "Core",
+      "route": "/components/core/input-otp/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/input-otp.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/input-otp.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/input-otp.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "empty",
+        "partial",
+        "complete",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#input-otp-slice",
+        "selector": "#input-otp-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.file-upload",
+      "kind": "Core",
+      "route": "/components/core/file-upload/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/file-upload.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/file-upload.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/file-upload.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "drag-active",
+        "empty",
+        "selected",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "color.surface.panel",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#file-upload-slice",
+        "selector": "#file-upload-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.color-picker",
+      "kind": "Core",
+      "route": "/components/core/color-picker/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/color-picker.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/color-picker.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/color-picker.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "selected",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "motion.standard.duration",
+        "motion.standard.easing"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#color-picker-slice",
+        "selector": "#color-picker-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.date-picker",
+      "kind": "Core",
+      "route": "/components/core/date-picker/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/date-picker.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/date-picker.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/date-picker.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "closed",
+        "open",
+        "empty",
+        "selected",
+        "range-partial",
+        "range-selected",
+        "invalid",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "color.surface.panel",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "font.weight.emphasis",
+        "space.navigation.gap",
+        "font.size.label"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#date-picker-slice",
+        "selector": "#date-picker-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.time-picker",
+      "kind": "Core",
+      "route": "/components/core/time-picker/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/time-picker.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/time-picker.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/time-picker.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "empty",
+        "filled",
+        "invalid",
+        "read-only",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "border.control.width",
+        "radius.control",
+        "size.control.minimum",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#time-picker-slice",
+        "selector": "#time-picker-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.calendar",
+      "kind": "Core",
+      "route": "/components/core/calendar/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/calendar.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/calendar.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/calendar.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "current",
+        "selected",
+        "range-start",
+        "range-middle",
+        "range-end",
+        "unavailable",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "space.navigation.gap",
+        "border.control.width",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#calendar-slice",
+        "selector": "#calendar-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.dialog",
+      "kind": "Core",
+      "route": "/components/core/dialog/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/dialog.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/dialog.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/dialog.json",
+      "states": [
+        "closed",
+        "open"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.focus.ring",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "depth.rest.x",
+        "depth.rest.y",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#dialog-slice",
+        "selector": "#dialog-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.alert-dialog",
+      "kind": "Core",
+      "route": "/components/core/alert-dialog/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/alert-dialog.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/alert-dialog.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/alert-dialog.json",
+      "states": [
+        "closed",
+        "open"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.focus.ring",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "depth.rest.x",
+        "depth.rest.y",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#alert-dialog-slice",
+        "selector": "#alert-dialog-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.drawer",
+      "kind": "Core",
+      "route": "/components/core/drawer/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/drawer.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/drawer.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/drawer.json",
+      "states": [
+        "closed",
+        "open"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.focus.ring",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "depth.rest.x",
+        "depth.rest.y",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#drawer-slice",
+        "selector": "#drawer-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.popover",
+      "kind": "Core",
+      "route": "/components/core/popover/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/popover.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/popover.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/popover.json",
+      "states": [
+        "closed",
+        "open"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "depth.rest.x",
+        "depth.rest.y",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#popover-slice",
+        "selector": "#popover-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.hover-card",
+      "kind": "Core",
+      "route": "/components/core/hover-card/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/hover-card.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/hover-card.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/hover-card.json",
+      "states": [
+        "closed",
+        "open",
+        "dismissed"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.surface",
+        "depth.rest.x",
+        "depth.rest.y",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#hover-card-slice",
+        "selector": "#hover-card-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.dropdown-menu",
+      "kind": "Core",
+      "route": "/components/core/dropdown-menu/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/dropdown-menu.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/dropdown-menu.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/dropdown-menu.json",
+      "states": [
+        "closed",
+        "open",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "checked",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#dropdown-menu-slice",
+        "selector": "#dropdown-menu-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.context-menu",
+      "kind": "Core",
+      "route": "/components/core/context-menu/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/context-menu.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/context-menu.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/context-menu.json",
+      "states": [
+        "closed",
+        "open",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "checked",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#context-menu-slice",
+        "selector": "#context-menu-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.menubar",
+      "kind": "Core",
+      "route": "/components/core/menubar/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/menubar.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/menubar.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/menubar.json",
+      "states": [
+        "closed",
+        "open",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "checked",
+        "disabled"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.navigation.gap",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "opacity.disabled",
+        "font.family.body",
+        "font.size.body",
+        "font.size.label",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#menubar-slice",
+        "selector": "#menubar-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.navigation-menu",
+      "kind": "Core",
+      "route": "/components/core/navigation-menu/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/navigation-menu.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/navigation-menu.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/navigation-menu.json",
+      "states": [
+        "closed",
+        "open",
+        "hover",
+        "focus-visible",
+        "pressed",
+        "current"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.navigation.gap",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.control.width",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "size.control.minimum",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.press.easing",
+        "motion.release.duration",
+        "motion.release.easing",
+        "motion.standard.duration",
+        "motion.standard.easing",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "font.family.body",
+        "font.size.body",
+        "font.size.navigation",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#navigation-menu-slice",
+        "selector": "#navigation-menu-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.toast",
+      "kind": "Core",
+      "route": "/components/core/toast/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/toast.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/toast.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/toast.json",
+      "states": [
+        "queued",
+        "visible",
+        "dismissed"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.strong",
+        "color.state.info",
+        "color.state.success",
+        "color.state.warning",
+        "color.state.error",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "size.control.minimum",
+        "border.control.width",
+        "border.surface.width",
+        "radius.control",
+        "radius.surface",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "depth.rest.x",
+        "depth.rest.y",
+        "depth.hover.x",
+        "depth.hover.y",
+        "depth.active.x",
+        "depth.active.y",
+        "press.hover.x",
+        "press.hover.y",
+        "press.active.x",
+        "press.active.y",
+        "motion.press.duration",
+        "motion.release.duration",
+        "motion.standard.duration",
+        "motion.press.easing",
+        "motion.release.easing",
+        "motion.standard.easing",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.emphasis"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#toast-slice",
+        "selector": "#toast-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.table",
+      "kind": "Core",
+      "route": "/components/core/table/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/table.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/table.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/table.json",
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.strong"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#table-slice",
+        "selector": "#table-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.data-grid",
+      "kind": "Core",
+      "route": "/components/core/data-grid/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/data-grid.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/data-grid.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/data-grid.json",
+      "states": [
+        "rest",
+        "hover",
+        "focus-visible",
+        "selected",
+        "editing"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.surface.interactive",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "color.border.strong",
+        "color.action.primary.surface",
+        "color.action.primary.content",
+        "color.focus.ring",
+        "space.control.inline",
+        "space.control.block",
+        "space.surface.inline",
+        "space.surface.block",
+        "size.control.minimum",
+        "border.control.width",
+        "border.surface.width",
+        "focus.ring.width",
+        "focus.ring.offset",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.emphasis",
+        "font.weight.strong"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#data-grid-slice",
+        "selector": "#data-grid-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.item",
+      "kind": "Core",
+      "route": "/components/core/item/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/item.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/item.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/item.json",
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "color.surface.panel",
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.strong"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#item-slice",
+        "selector": "#item-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.list",
+      "kind": "Core",
+      "route": "/components/core/list/",
+      "maturity": "Public proof",
+      "sourcePath": "packages/adapters/web/components/list.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/list.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/list.json",
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.strong"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#list-slice",
+        "selector": "#list-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "core.description-list",
+      "kind": "Core",
+      "route": "/components/core/description-list/",
+      "maturity": "Implemented",
+      "sourcePath": "packages/adapters/web/components/description-list.css",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/description-list.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/description-list.json",
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "color.content.primary",
+        "color.content.secondary",
+        "color.border.default",
+        "space.surface.inline",
+        "space.surface.block",
+        "border.surface.width",
+        "font.family.body",
+        "font.size.body",
+        "font.weight.regular",
+        "font.weight.strong"
+      ],
+      "supports": {
+        "keyboard": true,
+        "touch": true,
+        "rtl": true,
+        "reducedMotion": true,
+        "forcedColors": true
+      },
+      "preview": {
+        "type": "core",
+        "route": "/foundry/#description-list-slice",
+        "selector": "#description-list-slice"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.product-price",
+      "kind": "Commerce",
+      "route": "/components/commerce/product-price/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L73",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"product-price\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.product-card",
+      "kind": "Commerce",
+      "route": "/components/commerce/product-card/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L86",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"product-card\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.product-gallery",
+      "kind": "Commerce",
+      "route": "/components/commerce/product-gallery/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L115",
+      "contractUrl": null,
+      "states": [
+        "rest",
+        "selected"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"product-gallery\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.cart-line",
+      "kind": "Commerce",
+      "route": "/components/commerce/cart-line/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L144",
+      "contractUrl": null,
+      "states": [
+        "rest",
+        "removing",
+        "error"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"cart-line\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.order-summary",
+      "kind": "Commerce",
+      "route": "/components/commerce/order-summary/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L188",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"order-summary\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.license-status",
+      "kind": "Commerce",
+      "route": "/components/commerce/license-status/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L225",
+      "contractUrl": null,
+      "states": [
+        "active",
+        "grace",
+        "expired",
+        "cancelled",
+        "refunded"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"license-status\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.seat-usage",
+      "kind": "Commerce",
+      "route": "/components/commerce/seat-usage/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L248",
+      "contractUrl": null,
+      "states": [
+        "rest",
+        "full"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"seat-usage\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.download-entitlement",
+      "kind": "Commerce",
+      "route": "/components/commerce/download-entitlement/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L264",
+      "contractUrl": null,
+      "states": [
+        "eligible",
+        "unavailable",
+        "requesting",
+        "error"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"download-entitlement\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.product-detail",
+      "kind": "Commerce",
+      "route": "/components/commerce/product-detail/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave2.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L35",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"product-detail\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.product-media",
+      "kind": "Commerce",
+      "route": "/components/commerce/product-media/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave2.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L55",
+      "contractUrl": null,
+      "states": [
+        "preview",
+        "code",
+        "files"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"product-media\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.review-summary",
+      "kind": "Commerce",
+      "route": "/components/commerce/review-summary/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave2.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L111",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"review-summary\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.license-selector",
+      "kind": "Commerce",
+      "route": "/components/commerce/license-selector/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave2.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L125",
+      "contractUrl": null,
+      "states": [
+        "unselected",
+        "selected"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"license-selector\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.renewal-note",
+      "kind": "Commerce",
+      "route": "/components/commerce/renewal-note/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave2.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L145",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"renewal-note\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.pricing-tier",
+      "kind": "Commerce",
+      "route": "/components/commerce/pricing-tier/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave2.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L155",
+      "contractUrl": null,
+      "states": [
+        "rest",
+        "requesting",
+        "error"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"pricing-tier\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.coupon",
+      "kind": "Commerce",
+      "route": "/components/commerce/coupon/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L23",
+      "contractUrl": null,
+      "states": [
+        "ready",
+        "processing",
+        "accepted",
+        "rejected",
+        "error"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"coupon\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.checkout-field",
+      "kind": "Commerce",
+      "route": "/components/commerce/checkout-field/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L52",
+      "contractUrl": null,
+      "states": [
+        "rest",
+        "invalid"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"checkout-field\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.invoice-details",
+      "kind": "Commerce",
+      "route": "/components/commerce/invoice-details/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L76",
+      "contractUrl": null,
+      "states": [
+        "rest",
+        "invalid",
+        "saving",
+        "saved",
+        "rejected",
+        "error"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"invoice-details\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.checkout-steps",
+      "kind": "Commerce",
+      "route": "/components/commerce/checkout-steps/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L120",
+      "contractUrl": null,
+      "states": [
+        "ready",
+        "processing",
+        "failed",
+        "recovered"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"checkout-steps\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.payment-method",
+      "kind": "Commerce",
+      "route": "/components/commerce/payment-method/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L141",
+      "contractUrl": null,
+      "states": [
+        "rest",
+        "selected"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"payment-method\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.payment-failure",
+      "kind": "Commerce",
+      "route": "/components/commerce/payment-failure/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L165",
+      "contractUrl": null,
+      "states": [
+        "failed",
+        "retrying",
+        "awaiting-provider"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"payment-failure\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.payment-recovery",
+      "kind": "Commerce",
+      "route": "/components/commerce/payment-recovery/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L187",
+      "contractUrl": null,
+      "states": [
+        "ready",
+        "processing",
+        "recovered",
+        "failed"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"payment-recovery\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.processing-state",
+      "kind": "Commerce",
+      "route": "/components/commerce/processing-state/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L211",
+      "contractUrl": null,
+      "states": [
+        "processing"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"processing-state\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.order-confirmation",
+      "kind": "Commerce",
+      "route": "/components/commerce/order-confirmation/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L222",
+      "contractUrl": null,
+      "states": [
+        "confirmed"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"order-confirmation\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.receipt",
+      "kind": "Commerce",
+      "route": "/components/commerce/receipt/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave3.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L242",
+      "contractUrl": null,
+      "states": [
+        "paid"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"receipt\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.download-row",
+      "kind": "Commerce",
+      "route": "/components/commerce/download-row/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L53",
+      "contractUrl": null,
+      "states": [
+        "eligible",
+        "unavailable",
+        "requesting",
+        "error"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"download-row\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.purchase-history-row",
+      "kind": "Commerce",
+      "route": "/components/commerce/purchase-history-row/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L66",
+      "contractUrl": null,
+      "states": [
+        "paid",
+        "pending",
+        "refunded",
+        "failed"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"purchase-history-row\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.license-card",
+      "kind": "Commerce",
+      "route": "/components/commerce/license-card/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L77",
+      "contractUrl": null,
+      "states": [
+        "active",
+        "grace",
+        "expired",
+        "cancelled",
+        "refunded"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"license-card\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.invoice-history",
+      "kind": "Commerce",
+      "route": "/components/commerce/invoice-history/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L92",
+      "contractUrl": null,
+      "states": [
+        "empty",
+        "populated"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"invoice-history\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.activation-row",
+      "kind": "Commerce",
+      "route": "/components/commerce/activation-row/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L110",
+      "contractUrl": null,
+      "states": [
+        "active",
+        "inactive",
+        "revoked"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"activation-row\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.update-eligibility",
+      "kind": "Commerce",
+      "route": "/components/commerce/update-eligibility/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L120",
+      "contractUrl": null,
+      "states": [
+        "active",
+        "grace",
+        "expired"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"update-eligibility\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.renewal-state",
+      "kind": "Commerce",
+      "route": "/components/commerce/renewal-state/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L131",
+      "contractUrl": null,
+      "states": [
+        "active",
+        "grace",
+        "expired",
+        "cancelled",
+        "past_due",
+        "processing",
+        "confirmed",
+        "failed"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"renewal-state\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.plan-change",
+      "kind": "Commerce",
+      "route": "/components/commerce/plan-change/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L143",
+      "contractUrl": null,
+      "states": [
+        "ready",
+        "quoted",
+        "processing",
+        "complete",
+        "failed"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"plan-change\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.ownership-transfer",
+      "kind": "Commerce",
+      "route": "/components/commerce/ownership-transfer/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L186",
+      "contractUrl": null,
+      "states": [
+        "ready",
+        "processing",
+        "failed"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"ownership-transfer\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.subscription-management",
+      "kind": "Commerce",
+      "route": "/components/commerce/subscription-management/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L239",
+      "contractUrl": null,
+      "states": [
+        "active",
+        "cancel_at_period_end",
+        "cancelled",
+        "past_due",
+        "processing"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"subscription-management\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "commerce.ownership-timeline",
+      "kind": "Commerce",
+      "route": "/components/commerce/ownership-timeline/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/commerce/wave4.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L280",
+      "contractUrl": null,
+      "states": [
+        "empty",
+        "populated"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.button",
+        "core.badge"
+      ],
+      "supports": {
+        "core.card": true,
+        "core.button": true,
+        "core.badge": true
+      },
+      "preview": {
+        "type": "commerce",
+        "route": "/labs/experimental/commerce/",
+        "selector": "[data-component=\"ownership-timeline\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.stat-card",
+      "kind": "Operations",
+      "route": "/components/operations/stat-card/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L33",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"stat-card\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.activation-meter",
+      "kind": "Operations",
+      "route": "/components/operations/activation-meter/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L43",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"activation-meter\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.integration-status",
+      "kind": "Operations",
+      "route": "/components/operations/integration-status/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L53",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"integration-status\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.risk-indicator",
+      "kind": "Operations",
+      "route": "/components/operations/risk-indicator/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L62",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"risk-indicator\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.permission-scope",
+      "kind": "Operations",
+      "route": "/components/operations/permission-scope/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L69",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"permission-scope\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.webhook-delivery-log",
+      "kind": "Operations",
+      "route": "/components/operations/webhook-delivery-log/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L82",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: callback": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"webhook-delivery-log\"]"
+      },
+      "providerAuthority": "callback",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.secret-reference",
+      "kind": "Operations",
+      "route": "/components/operations/secret-reference/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L113",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: masked-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"secret-reference\"]"
+      },
+      "providerAuthority": "masked-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.release-artifact",
+      "kind": "Operations",
+      "route": "/components/operations/release-artifact/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L123",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: callback": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"release-artifact\"]"
+      },
+      "providerAuthority": "callback",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.rollout-stages",
+      "kind": "Operations",
+      "route": "/components/operations/rollout-stages/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L151",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"rollout-stages\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.operation-timeline",
+      "kind": "Operations",
+      "route": "/components/operations/operation-timeline/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L166",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"operation-timeline\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.usage-chart",
+      "kind": "Operations",
+      "route": "/components/operations/usage-chart/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L180",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: read-only": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"usage-chart\"]"
+      },
+      "providerAuthority": "read-only",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "operations.agent-approval-plan",
+      "kind": "Operations",
+      "route": "/components/operations/agent-approval-plan/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/verticals/operations/components.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L207",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [
+        "core.card",
+        "core.badge",
+        "core.button"
+      ],
+      "supports": {
+        "Authority: callback": true,
+        "core.card": true,
+        "core.badge": true,
+        "core.button": true
+      },
+      "preview": {
+        "type": "operations",
+        "route": "/labs/experimental/operations/",
+        "selector": "[data-example=\"agent-approval-plan\"]"
+      },
+      "providerAuthority": "callback",
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "block.trust-strip",
+      "kind": "Block",
+      "route": "/components/block/trust-strip/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/blocks/commerce/index.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"trust-strip\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "block.promo-band",
+      "kind": "Block",
+      "route": "/components/block/promo-band/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/blocks/commerce/index.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"promo-band\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "block.testimonials",
+      "kind": "Block",
+      "route": "/components/block/testimonials/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/blocks/commerce/index.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"testimonials\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "block.guarantee",
+      "kind": "Block",
+      "route": "/components/block/guarantee/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/blocks/commerce/index.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"guarantee\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "block.plan-comparison",
+      "kind": "Block",
+      "route": "/components/block/plan-comparison/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/blocks/commerce/index.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"plan-comparison\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "block.bundle-builder",
+      "kind": "Block",
+      "route": "/components/block/bundle-builder/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/blocks/commerce/index.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"bundle-builder\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "block.account-nav",
+      "kind": "Block",
+      "route": "/components/block/account-nav/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/blocks/commerce/index.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"account-nav\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "template.license-ops-dashboard",
+      "kind": "Template",
+      "route": "/components/template/license-ops-dashboard/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/templates/operations.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/templates/operations.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"license-ops-dashboard\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    },
+    {
+      "id": "template.release-operations-console",
+      "kind": "Template",
+      "route": "/components/template/release-operations-console/",
+      "maturity": "Experimental",
+      "sourcePath": "packages/templates/operations.mjs",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/templates/operations.mjs#L1",
+      "contractUrl": null,
+      "states": [
+        "rest"
+      ],
+      "dependencies": [],
+      "supports": {
+        "Synthetic demonstration only": true
+      },
+      "preview": {
+        "type": "blocks",
+        "route": "/labs/experimental/blocks/",
+        "selector": "[data-example=\"release-operations-console\"]"
+      },
+      "providerAuthority": null,
+      "controls": [],
+      "controlAvailability": "not-declared",
+      "documentationOnly": true,
+      "productionIntegration": false
+    }
+  ]
+}

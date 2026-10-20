@@ -8,7 +8,7 @@
 <main id="main"><div class="wrap subpage detail-wrap" data-component-id="commerce.download-row">
 <nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/components/">Components</a><span>/</span><span>Commerce</span><span>/</span><span aria-current="page">commerce.download-row</span></nav>
 <header class="detail-head"><span class="pill">Commerce / Experimental</span><h1>commerce.download-row</h1><p class="detail-intent">Commerce download row UI. Production use requires verified provider adapters.</p>
-<div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/wave4.mjs#L53">View real source ↗</a><a class="btn" href="/labs/experimental/commerce/">Open full demo ↗</a><a class="btn" href="/studio/">Theme Studio ↗</a></div></header>
+<div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L53">View real source ↗</a><a class="btn" href="/labs/experimental/commerce/">Open full demo ↗</a><a class="btn" href="/studio/">Theme Studio ↗</a></div></header>
 <div class="detail-layout"><div class="detail-primary"><section class="detail-section detail-preview">
 <div class="detail-section-head"><div><span class="kicker">01 / EXISTING IMPLEMENTATION</span><h2>Live component preview</h2></div><span class="detail-proof">Experimental lab</span></div>
 <p class="detail-context">Actual experimental demo with synthetic records and simulated callbacks; no real payment, agent, or account mutations.</p><div class="detail-controls">
@@ -17,7 +17,9 @@
 </div>
 <div class="detail-viewport" data-width="desktop"><iframe id="actual-demo" loading="eager" title="Existing commerce.download-row demo"></iframe></div>
 <p class="detail-footnote">This is the <a href="/labs/experimental/commerce/">existing demo</a>, framed here for inspection—not a separately invented component. Provider integrations and production release are not included.</p></section>
-<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">02 / SOURCE EVIDENCE</span><h2>Real code excerpt</h2></div><button class="detail-control" id="copy-source" type="button">Copy excerpt</button></div>
+
+<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">02 / VERIFIED CAPABILITIES</span><h2>Integration notes</h2></div></div><p class="detail-context">Component-specific property controls are not exposed by this documentation yet. Use the real demo and pinned contract or implementation; no generic state simulator has been invented.</p></section>
+<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">04 / SOURCE EVIDENCE</span><h2>Real code excerpt</h2></div><button class="detail-control" id="copy-source" type="button">Copy excerpt</button></div>
 <p class="detail-context">Verbatim code from the pinned repository revision, not a fictional installation API. Use the linked full source for implementation.</p>
 <div class="detail-code-header"><span>packages/verticals/commerce/wave4.mjs</span><span>JavaScript</span></div>
 <pre class="detail-code"><code id="source-code">export function renderDownloadRow(entry,{onRequest}={}){
@@ -55,18 +57,19 @@ export function renderLicenseCard(license){
    bool(license.entitlement.active,&#39;entitlement.active&#39;);
    str(license.entitlement.reason,&#39;entitlement.reason&#39;);
    e.append(dataList([[&#39;Entitlement&#39;,license.entitlement.active?&#39;Allowed&#39;:&#39;Not currently allowed&#39;],[&#39;Reason&#39;,license.entitlement.reason]]));
- }</code></pre><a class="textlink" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/wave4.mjs#L53">View full implementation ↗</a></section></div>
+ }</code></pre><a class="textlink" href="https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L53">View full implementation ↗</a></section></div>
 <aside class="detail-aside"><section class="detail-meta"><span class="kicker">03 / CANONICAL METADATA</span><h2>Component facts</h2><dl>
 <div><dt>Catalog ID</dt><dd><code>commerce.download-row</code></dd></div><div><dt>Maturity</dt><dd>Experimental</dd></div><div><dt>Layer</dt><dd>Commerce</dd></div>
-<div><dt>Adapter source</dt><dd><a href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/wave4.mjs#L53">Code ↗</a></dd></div>
+<div><dt>Adapter source</dt><dd><a href="https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L53">Code ↗</a></dd></div>
 
 </dl></section><section class="detail-meta"><h2>Declared states</h2><div class="detail-chips"><span>eligible</span><span>unavailable</span><span>requesting</span><span>error</span></div>
 <p class="detail-meta-note">States come from experimental implementation metadata.</p></section>
 <section class="detail-meta"><h2>Authority and dependencies</h2><div class="detail-chips"><span>core.card</span><span>core.button</span><span>core.badge</span></div></section>
+<section class="detail-meta"><h2>For coding agents</h2><p class="detail-meta-note">Source-pinned, machine-readable capabilities and availability, not a fictional installation API.</p><a href="/components/agent-index.json">Agent capability index ↗</a></section>
 <section class="detail-meta"><h2>Related components</h2><div id="related-links" class="detail-related"></div></section></aside></div></div>
 <script type="module" src="/component-detail.mjs"></script></main>
 <footer class="footer"><div class="footer-inner"><div><strong>NeoSmartUXUI<span style="color:#92a8ff">■</span></strong><p>One composable language for accessible components, tactile interactions, themes, Blocks and complete interfaces. Apache-2.0 source.</p></div>
 <div><h3>EXPLORE</h3><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a></div>
 <div><h3>BUILD</h3><a href="/studio/">Theme Studio</a><a href="/foundry/">Core Foundry</a><a href="/flavors/">Flavors</a><a href="/labs/">Experimental Labs</a></div>
 <div><h3>RESOURCES</h3><a href="/docs/">Documentation</a><a href="https://github.com/neosmartuxui/neosmartuxui">GitHub source ↗</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/docs/PUBLIC-SOURCE-STATUS.md">Release status</a></div></div>
-<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: 79a7abb994ae · Individual maturity states apply.</span></div></footer></body></html>
+<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: b3a3661f9f5a · Individual maturity states apply.</span></div></footer></body></html>
