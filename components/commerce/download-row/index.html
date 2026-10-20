@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Commerce download row UI. Production use requires verified provider adapters."><meta name="theme-color" content="#f8f9fb">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/portal.css"><script type="module" src="/portal.mjs"></script>
+<title>commerce.download-row — NeoSmartUXUI</title></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="bar-inner"><a class="brand" href="/" aria-label="NeoSmartUXUI home"><span class="mark" aria-hidden="true">N</span><span><strong>NeoSmartUXUI</strong><small>INTERFACE SYSTEM / OPEN SOURCE</small></span></a>
+<button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu ☰</button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/components/" aria-current="page">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a><a href="/labs/">Labs</a><a href="/docs/">Docs</a></nav><a class="nav-cta" href="/studio/">Open Studio ↗</a></div></header>
+<main id="main"><div class="wrap subpage detail-wrap" data-component-id="commerce.download-row">
+<nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/components/">Components</a><span>/</span><span>Commerce</span><span>/</span><span aria-current="page">commerce.download-row</span></nav>
+<header class="detail-head"><span class="pill">Commerce / Experimental</span><h1>commerce.download-row</h1><p class="detail-intent">Commerce download row UI. Production use requires verified provider adapters.</p>
+<div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/wave4.mjs#L53">View real source ↗</a><a class="btn" href="/labs/experimental/commerce/">Open full demo ↗</a><a class="btn" href="/studio/">Theme Studio ↗</a></div></header>
+<div class="detail-layout"><div class="detail-primary"><section class="detail-section detail-preview">
+<div class="detail-section-head"><div><span class="kicker">01 / EXISTING IMPLEMENTATION</span><h2>Live component preview</h2></div><span class="detail-proof">Experimental lab</span></div>
+<p class="detail-context">Actual experimental demo with synthetic records and simulated callbacks; no real payment, agent, or account mutations.</p><div class="detail-controls">
+<fieldset class="detail-viewport-control"><legend>Viewport</legend><button class="detail-control is-selected" type="button" data-width="desktop" aria-pressed="true">Desktop</button><button class="detail-control" type="button" data-width="mobile" aria-pressed="false">Mobile</button></fieldset>
+<label class="detail-theme-label" for="preview-theme">Demo theme<select id="preview-theme" aria-label="Demo theme"><option value="hardline-light">hardline light</option><option value="hardline-dark">hardline dark</option><option value="soft-light">soft light</option><option value="soft-dark">soft dark</option><option value="rivet-light">rivet light</option><option value="rivet-dark">rivet dark</option><option value="mono-light">mono light</option><option value="mono-dark">mono dark</option><option value="pulse-light">pulse light</option><option value="pulse-dark">pulse dark</option></select></label>
+</div>
+<div class="detail-viewport" data-width="desktop"><iframe id="actual-demo" loading="eager" title="Existing commerce.download-row demo"></iframe></div>
+<p class="detail-footnote">This is the <a href="/labs/experimental/commerce/">existing demo</a>, framed here for inspection—not a separately invented component. Provider integrations and production release are not included.</p></section>
+<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">02 / SOURCE EVIDENCE</span><h2>Real code excerpt</h2></div><button class="detail-control" id="copy-source" type="button">Copy excerpt</button></div>
+<p class="detail-context">Verbatim code from the pinned repository revision, not a fictional installation API. Use the linked full source for implementation.</p>
+<div class="detail-code-header"><span>packages/verticals/commerce/wave4.mjs</span><span>JavaScript</span></div>
+<pre class="detail-code"><code id="source-code">export function renderDownloadRow(entry,{onRequest}={}){
+ obj(entry,&#39;download row&#39;);str(entry.id,&#39;entitlement ID&#39;);str(entry.productId,&#39;product ID&#39;);str(entry.version,&#39;version&#39;);
+ bool(entry.eligible,&#39;eligible&#39;);callback(onRequest,&#39;onRequest&#39;);
+ const e=root(block(&#39;article&#39;,&#39;ns-card ns-commerce-account-row&#39;,title(entry.productId),muted(&#39;Version &#39;+entry.version)),&#39;download-row&#39;);
+ e.append(badge(entry.eligible?&#39;Eligible&#39;:&#39;Unavailable&#39;));
+ if(entry.reason!==undefined)e.append(muted(str(entry.reason,&#39;eligibility reason&#39;)));
+ if(entry.eligible){
+  // Existing entitlement component owns the provider callback, without navigation or signed URLs.
+  e.append(renderDownloadEntitlement({id:entry.id,productId:entry.productId,downloadAllowed:true},{onRequest}));
+ }else e.append(muted(&#39;No signed download will be requested.&#39;));
+ return e;
+}
+
+export function renderPurchaseHistoryRow(order,{locale=&#39;en-US&#39;}={}){
+ obj(order,&#39;purchase&#39;);str(order.id,&#39;order ID&#39;);
+ pick(order.status,[&#39;paid&#39;,&#39;pending&#39;,&#39;refunded&#39;,&#39;failed&#39;],&#39;order&#39;);
+ const e=root(block(&#39;article&#39;,&#39;ns-card ns-commerce-account-row&#39;,title(&#39;Order &#39;+order.id),badge(order.status)),&#39;purchase-history-row&#39;);
+ if(order.purchasedAt!==undefined)e.append(muted(&#39;Provider recorded: &#39;+str(order.purchasedAt,&#39;purchase date&#39;)));
+ if(order.total!==undefined)e.append(muted(&#39;Order total: &#39;+amount(order.total,locale)));
+ if(order.invoiceId)e.append(muted(&#39;Invoice reference: &#39;+str(order.invoiceId,&#39;invoice ID&#39;)));
+ e.append(muted(&#39;Order history is not proof of an active license.&#39;));
+ return e;
+}
+
+export function renderLicenseCard(license){
+ obj(license,&#39;license&#39;);str(license.id,&#39;license ID&#39;);str(license.productId,&#39;product ID&#39;);
+ pick(license.status,[&#39;active&#39;,&#39;grace&#39;,&#39;expired&#39;,&#39;cancelled&#39;,&#39;refunded&#39;],&#39;license&#39;);
+ const e=root(block(&#39;article&#39;,&#39;ns-card ns-commerce-account-card&#39;),&#39;license-card&#39;);
+ e.append(renderLicenseStatus({id:license.id,productId:license.productId,status:license.status,maskedKey:license.maskedKey,updatesThrough:license.updatesThrough}));
+ if(license.scope!==undefined)e.append(muted(&#39;Scope: &#39;+str(license.scope,&#39;license scope&#39;)));
+ if(license.entitlement!==undefined){
+   obj(license.entitlement,&#39;entitlement&#39;);
+   bool(license.entitlement.active,&#39;entitlement.active&#39;);
+   str(license.entitlement.reason,&#39;entitlement.reason&#39;);
+   e.append(dataList([[&#39;Entitlement&#39;,license.entitlement.active?&#39;Allowed&#39;:&#39;Not currently allowed&#39;],[&#39;Reason&#39;,license.entitlement.reason]]));
+ }</code></pre><a class="textlink" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/wave4.mjs#L53">View full implementation ↗</a></section></div>
+<aside class="detail-aside"><section class="detail-meta"><span class="kicker">03 / CANONICAL METADATA</span><h2>Component facts</h2><dl>
+<div><dt>Catalog ID</dt><dd><code>commerce.download-row</code></dd></div><div><dt>Maturity</dt><dd>Experimental</dd></div><div><dt>Layer</dt><dd>Commerce</dd></div>
+<div><dt>Adapter source</dt><dd><a href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/wave4.mjs#L53">Code ↗</a></dd></div>
+
+</dl></section><section class="detail-meta"><h2>Declared states</h2><div class="detail-chips"><span>eligible</span><span>unavailable</span><span>requesting</span><span>error</span></div>
+<p class="detail-meta-note">States come from experimental implementation metadata.</p></section>
+<section class="detail-meta"><h2>Authority and dependencies</h2><div class="detail-chips"><span>core.card</span><span>core.button</span><span>core.badge</span></div></section>
+<section class="detail-meta"><h2>Related components</h2><div id="related-links" class="detail-related"></div></section></aside></div></div>
+<script type="module" src="/component-detail.mjs"></script></main>
+<footer class="footer"><div class="footer-inner"><div><strong>NeoSmartUXUI<span style="color:#92a8ff">■</span></strong><p>One composable language for accessible components, tactile interactions, themes, Blocks and complete interfaces. Apache-2.0 source.</p></div>
+<div><h3>EXPLORE</h3><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a></div>
+<div><h3>BUILD</h3><a href="/studio/">Theme Studio</a><a href="/foundry/">Core Foundry</a><a href="/flavors/">Flavors</a><a href="/labs/">Experimental Labs</a></div>
+<div><h3>RESOURCES</h3><a href="/docs/">Documentation</a><a href="https://github.com/neosmartuxui/neosmartuxui">GitHub source ↗</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/docs/PUBLIC-SOURCE-STATUS.md">Release status</a></div></div>
+<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: 79a7abb994ae · Individual maturity states apply.</span></div></footer></body></html>

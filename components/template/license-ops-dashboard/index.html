@@ -1,0 +1,65 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Experimental Template composition: license ops dashboard."><meta name="theme-color" content="#f8f9fb">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/portal.css"><script type="module" src="/portal.mjs"></script>
+<title>template.license-ops-dashboard — NeoSmartUXUI</title></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="bar-inner"><a class="brand" href="/" aria-label="NeoSmartUXUI home"><span class="mark" aria-hidden="true">N</span><span><strong>NeoSmartUXUI</strong><small>INTERFACE SYSTEM / OPEN SOURCE</small></span></a>
+<button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu ☰</button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/components/" aria-current="page">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a><a href="/labs/">Labs</a><a href="/docs/">Docs</a></nav><a class="nav-cta" href="/studio/">Open Studio ↗</a></div></header>
+<main id="main"><div class="wrap subpage detail-wrap" data-component-id="template.license-ops-dashboard">
+<nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/components/">Components</a><span>/</span><span>Template</span><span>/</span><span aria-current="page">template.license-ops-dashboard</span></nav>
+<header class="detail-head"><span class="pill">Template / Experimental</span><h1>template.license-ops-dashboard</h1><p class="detail-intent">Experimental Template composition: license ops dashboard.</p>
+<div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/templates/operations.mjs#L1">View real source ↗</a><a class="btn" href="/labs/experimental/blocks/">Open full demo ↗</a><a class="btn" href="/studio/">Theme Studio ↗</a></div></header>
+<div class="detail-layout"><div class="detail-primary"><section class="detail-section detail-preview">
+<div class="detail-section-head"><div><span class="kicker">01 / EXISTING IMPLEMENTATION</span><h2>Live component preview</h2></div><span class="detail-proof">Experimental lab</span></div>
+<p class="detail-context">Actual experimental demo with synthetic records and simulated callbacks; no real payment, agent, or account mutations.</p><div class="detail-controls">
+<fieldset class="detail-viewport-control"><legend>Viewport</legend><button class="detail-control is-selected" type="button" data-width="desktop" aria-pressed="true">Desktop</button><button class="detail-control" type="button" data-width="mobile" aria-pressed="false">Mobile</button></fieldset>
+<label class="detail-theme-label" for="preview-theme">Demo theme<select id="preview-theme" aria-label="Demo theme"><option value="hardline-light">hardline light</option><option value="hardline-dark">hardline dark</option><option value="soft-light">soft light</option><option value="soft-dark">soft dark</option><option value="rivet-light">rivet light</option><option value="rivet-dark">rivet dark</option><option value="mono-light">mono light</option><option value="mono-dark">mono dark</option><option value="pulse-light">pulse light</option><option value="pulse-dark">pulse dark</option></select></label>
+</div>
+<div class="detail-viewport" data-width="desktop"><iframe id="actual-demo" loading="eager" title="Existing template.license-ops-dashboard demo"></iframe></div>
+<p class="detail-footnote">This is the <a href="/labs/experimental/blocks/">existing demo</a>, framed here for inspection—not a separately invented component. Provider integrations and production release are not included.</p></section>
+<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">02 / SOURCE EVIDENCE</span><h2>Real code excerpt</h2></div><button class="detail-control" id="copy-source" type="button">Copy excerpt</button></div>
+<p class="detail-context">Verbatim code from the pinned repository revision, not a fictional installation API. Use the linked full source for implementation.</p>
+<div class="detail-code-header"><span>packages/templates/operations.mjs</span><span>JavaScript</span></div>
+<pre class="detail-code"><code id="source-code">/* NeoSmartUXUI local template compositions — not a new primitive registry. */
+import {renderStatCard,renderActivationMeter,renderIntegrationStatus,renderOperationTimeline,renderReleaseArtifact,renderRolloutStages,renderAgentApprovalPlan,renderWebhookDeliveryLog} from &#39;../verticals/operations/components.mjs&#39;;
+const obj=(o,n)=&gt;{if(!o||typeof o!==&#39;object&#39;||Array.isArray(o))throw new TypeError(n+&#39; must be an object&#39;);return o};
+const el=(tag,cl=&#39;&#39;,text)=&gt;{const e=document.createElement(tag);if(cl)e.className=cl;if(text!==undefined)e.textContent=String(text);return e};
+const section=(label,content)=&gt;{const e=el(&#39;section&#39;,&#39;ns-template-module&#39;);const h=el(&#39;h3&#39;,&#39;&#39;,label);e.append(h,content);return e};
+const assemble=(id,title,items)=&gt;{const main=el(&#39;article&#39;,&#39;ns-template&#39;);main.dataset.template=id;main.setAttribute(&#39;aria-label&#39;,title);const h=el(&#39;h2&#39;,&#39;&#39;,title);main.append(h);for(const [name,content] of items)main.append(section(name,content));return main};
+export function renderLicenseOperationsDashboard(data){
+ obj(data,&#39;dashboard&#39;);
+ return assemble(&#39;license-ops-dashboard&#39;,&#39;License operations dashboard&#39;,[
+ [&#39;License performance&#39;,renderStatCard(data.stat)],
+ [&#39;Activation capacity&#39;,renderActivationMeter(data.activations)],
+ [&#39;Integrations&#39;,renderIntegrationStatus(data.integration)],
+ [&#39;Audit history&#39;,renderOperationTimeline(data.timeline)]
+ ]);
+}
+export function renderReleaseOperationsConsole(data,{onRequest,onDecision,onRetry}={}){
+ obj(data,&#39;release console&#39;);
+ return assemble(&#39;release-operations-console&#39;,&#39;Release operations console&#39;,[
+ [&#39;Verified artifact&#39;,renderReleaseArtifact(data.artifact,{onRequest})],
+ [&#39;Rollout&#39;,renderRolloutStages(data.rollout)],
+ [&#39;Operator approval&#39;,renderAgentApprovalPlan(data.agentPlan,{onDecision})],
+ [&#39;Webhook status&#39;,renderWebhookDeliveryLog(data.webhooks,{onRetry})]
+ ]);
+}
+export const TEMPLATE_RENDERERS=Object.freeze({
+ &#39;template.license-ops-dashboard&#39;:renderLicenseOperationsDashboard,
+ &#39;template.release-operations-console&#39;:renderReleaseOperationsConsole
+});
+</code></pre><a class="textlink" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/templates/operations.mjs#L1">View full implementation ↗</a></section></div>
+<aside class="detail-aside"><section class="detail-meta"><span class="kicker">03 / CANONICAL METADATA</span><h2>Component facts</h2><dl>
+<div><dt>Catalog ID</dt><dd><code>template.license-ops-dashboard</code></dd></div><div><dt>Maturity</dt><dd>Experimental</dd></div><div><dt>Layer</dt><dd>Template</dd></div>
+<div><dt>Adapter source</dt><dd><a href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/templates/operations.mjs#L1">Code ↗</a></dd></div>
+
+</dl></section><section class="detail-meta"><h2>Declared states</h2><div class="detail-chips"><span>rest</span></div>
+<p class="detail-meta-note">States come from experimental implementation metadata.</p></section>
+<section class="detail-meta"><h2>Authority and dependencies</h2><div class="detail-chips"><span>Synthetic demonstration only</span></div></section>
+<section class="detail-meta"><h2>Related components</h2><div id="related-links" class="detail-related"></div></section></aside></div></div>
+<script type="module" src="/component-detail.mjs"></script></main>
+<footer class="footer"><div class="footer-inner"><div><strong>NeoSmartUXUI<span style="color:#92a8ff">■</span></strong><p>One composable language for accessible components, tactile interactions, themes, Blocks and complete interfaces. Apache-2.0 source.</p></div>
+<div><h3>EXPLORE</h3><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a></div>
+<div><h3>BUILD</h3><a href="/studio/">Theme Studio</a><a href="/foundry/">Core Foundry</a><a href="/flavors/">Flavors</a><a href="/labs/">Experimental Labs</a></div>
+<div><h3>RESOURCES</h3><a href="/docs/">Documentation</a><a href="https://github.com/neosmartuxui/neosmartuxui">GitHub source ↗</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/docs/PUBLIC-SOURCE-STATUS.md">Release status</a></div></div>
+<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: 79a7abb994ae · Individual maturity states apply.</span></div></footer></body></html>

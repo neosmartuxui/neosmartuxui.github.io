@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Experimental Block composition: testimonials."><meta name="theme-color" content="#f8f9fb">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/portal.css"><script type="module" src="/portal.mjs"></script>
+<title>block.testimonials — NeoSmartUXUI</title></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="bar-inner"><a class="brand" href="/" aria-label="NeoSmartUXUI home"><span class="mark" aria-hidden="true">N</span><span><strong>NeoSmartUXUI</strong><small>INTERFACE SYSTEM / OPEN SOURCE</small></span></a>
+<button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu ☰</button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/components/" aria-current="page">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a><a href="/labs/">Labs</a><a href="/docs/">Docs</a></nav><a class="nav-cta" href="/studio/">Open Studio ↗</a></div></header>
+<main id="main"><div class="wrap subpage detail-wrap" data-component-id="block.testimonials">
+<nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/components/">Components</a><span>/</span><span>Block</span><span>/</span><span aria-current="page">block.testimonials</span></nav>
+<header class="detail-head"><span class="pill">Block / Experimental</span><h1>block.testimonials</h1><p class="detail-intent">Experimental Block composition: testimonials.</p>
+<div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/blocks/commerce/index.mjs#L1">View real source ↗</a><a class="btn" href="/labs/experimental/blocks/">Open full demo ↗</a><a class="btn" href="/studio/">Theme Studio ↗</a></div></header>
+<div class="detail-layout"><div class="detail-primary"><section class="detail-section detail-preview">
+<div class="detail-section-head"><div><span class="kicker">01 / EXISTING IMPLEMENTATION</span><h2>Live component preview</h2></div><span class="detail-proof">Experimental lab</span></div>
+<p class="detail-context">Actual experimental demo with synthetic records and simulated callbacks; no real payment, agent, or account mutations.</p><div class="detail-controls">
+<fieldset class="detail-viewport-control"><legend>Viewport</legend><button class="detail-control is-selected" type="button" data-width="desktop" aria-pressed="true">Desktop</button><button class="detail-control" type="button" data-width="mobile" aria-pressed="false">Mobile</button></fieldset>
+<label class="detail-theme-label" for="preview-theme">Demo theme<select id="preview-theme" aria-label="Demo theme"><option value="hardline-light">hardline light</option><option value="hardline-dark">hardline dark</option><option value="soft-light">soft light</option><option value="soft-dark">soft dark</option><option value="rivet-light">rivet light</option><option value="rivet-dark">rivet dark</option><option value="mono-light">mono light</option><option value="mono-dark">mono dark</option><option value="pulse-light">pulse light</option><option value="pulse-dark">pulse dark</option></select></label>
+</div>
+<div class="detail-viewport" data-width="desktop"><iframe id="actual-demo" loading="eager" title="Existing block.testimonials demo"></iframe></div>
+<p class="detail-footnote">This is the <a href="/labs/experimental/blocks/">existing demo</a>, framed here for inspection—not a separately invented component. Provider integrations and production release are not included.</p></section>
+<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">02 / SOURCE EVIDENCE</span><h2>Real code excerpt</h2></div><button class="detail-control" id="copy-source" type="button">Copy excerpt</button></div>
+<p class="detail-context">Verbatim code from the pinned repository revision, not a fictional installation API. Use the linked full source for implementation.</p>
+<div class="detail-code-header"><span>packages/blocks/commerce/index.mjs</span><span>JavaScript</span></div>
+<pre class="detail-code"><code id="source-code">/* NeoSmartUXUI Blocks — Commerce compositions. Local only. */
+import {renderProductPrice} from &#39;../../verticals/commerce/components.mjs&#39;;
+const obj=(x,n)=&gt;{if(!x||typeof x!==&#39;object&#39;||Array.isArray(x))throw new TypeError(n+&#39; must be an object&#39;);return x};
+const str=(x,n)=&gt;{if(typeof x!==&#39;string&#39;||!x.trim())throw new TypeError(n+&#39; must be a nonempty string&#39;);return x};
+const arr=(x,n)=&gt;{if(!Array.isArray(x))throw new TypeError(n+&#39; must be an array&#39;);return x};
+const cb=f=&gt;{if(f!==undefined&amp;&amp;typeof f!==&#39;function&#39;)throw new TypeError(&#39;Host callback must be a function&#39;);return f};
+const el=(tag,cl=&#39;&#39;,text)=&gt;{const x=document.createElement(tag);if(cl)x.className=cl;if(text!==undefined)x.textContent=String(text);return x};
+const group=(tag,cl,...items)=&gt;{const x=el(tag,cl);x.append(...items.filter(x=&gt;x!==null&amp;&amp;x!==undefined));return x};
+const root=(x,name)=&gt;{x.classList.add(&#39;ns-block&#39;,&#39;ns-block-&#39;+name);x.dataset.block=name;return x};
+const title=s=&gt;el(&#39;h3&#39;,&#39;ns-block-title&#39;,str(s,&#39;heading&#39;));
+const muted=s=&gt;el(&#39;p&#39;,&#39;ns-block-muted&#39;,String(s));
+const button=s=&gt;{const b=el(&#39;button&#39;,&#39;ns-button&#39;,s);b.type=&#39;button&#39;;return b};
+const safeUrl=raw=&gt;{str(raw,&#39;URL&#39;);const u=new URL(raw,document.baseURI);if(![&#39;http:&#39;,&#39;https:&#39;].includes(u.protocol)||(u.protocol===&#39;http:&#39;&amp;&amp;u.origin!==location.origin)||u.username||u.password)throw new TypeError(&#39;External URL must use HTTPS&#39;);return u.href};
+const distinct=(xs,key=&#39;id&#39;)=&gt;{const seen=new Set();for(const x of xs){obj(x,&#39;entry&#39;);const id=str(x[key],key);if(seen.has(id))throw new TypeError(&#39;Duplicate entry &#39;+id);seen.add(id)}};
+export function renderTrustStrip({items,label=&#39;Trust evidence&#39;}){
+ arr(items,&#39;trust items&#39;);if(!items.length)throw new TypeError(&#39;At least one evidence item is required&#39;);
+ const e=root(group(&#39;section&#39;,&#39;ns-card ns-block-trust-strip&#39;),&#39;trust-strip&#39;);e.setAttribute(&#39;aria-label&#39;,label);
+ const list=el(&#39;ul&#39;,&#39;ns-block-inline-list&#39;);
+ for(const item of items){
+   obj(item,&#39;trust item&#39;);str(item.label,&#39;trust label&#39;);str(item.detail,&#39;trust detail&#39;);
+   list.append(group(&#39;li&#39;,&#39;&#39;,el(&#39;strong&#39;,&#39;&#39;,item.label),muted(item.detail)));
+ }
+ e.append(list);return e;
+}
+export function renderPromoBand({heading,description,actionLabel,promotionCode},{onActivate}={}){
+ cb(onActivate);
+ const e=root(group(&#39;section&#39;,&#39;ns-card ns-block-promo-band&#39;,title(heading),muted(str(description,&#39;description&#39;))),&#39;promo-band&#39;);
+ if(promotionCode!==undefined)e.append(muted(&#39;Promotion code (provider): &#39;+str(promotionCode,&#39;promotion code&#39;)));
+ const b=button(str(actionLabel,&#39;action label&#39;));b.disabled=!onActivate;
+ const status=el(&#39;p&#39;,&#39;ns-block-message&#39;);status.setAttribute(&#39;aria-live&#39;,&#39;polite&#39;);
+ let pending=false;
+ b.addEventListener(&#39;click&#39;,async()=&gt;{
+   if(!onActivate||pending)return;
+   pending=true;b.disabled=true;status.textContent=&#39;Requesting provider offer...&#39;;e.dataset.state=&#39;processing&#39;;
+   try{
+     const reply=obj(await onActivate(),&#39;provider offer result&#39;);</code></pre><a class="textlink" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/blocks/commerce/index.mjs#L1">View full implementation ↗</a></section></div>
+<aside class="detail-aside"><section class="detail-meta"><span class="kicker">03 / CANONICAL METADATA</span><h2>Component facts</h2><dl>
+<div><dt>Catalog ID</dt><dd><code>block.testimonials</code></dd></div><div><dt>Maturity</dt><dd>Experimental</dd></div><div><dt>Layer</dt><dd>Block</dd></div>
+<div><dt>Adapter source</dt><dd><a href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/blocks/commerce/index.mjs#L1">Code ↗</a></dd></div>
+
+</dl></section><section class="detail-meta"><h2>Declared states</h2><div class="detail-chips"><span>rest</span></div>
+<p class="detail-meta-note">States come from experimental implementation metadata.</p></section>
+<section class="detail-meta"><h2>Authority and dependencies</h2><div class="detail-chips"><span>Synthetic demonstration only</span></div></section>
+<section class="detail-meta"><h2>Related components</h2><div id="related-links" class="detail-related"></div></section></aside></div></div>
+<script type="module" src="/component-detail.mjs"></script></main>
+<footer class="footer"><div class="footer-inner"><div><strong>NeoSmartUXUI<span style="color:#92a8ff">■</span></strong><p>One composable language for accessible components, tactile interactions, themes, Blocks and complete interfaces. Apache-2.0 source.</p></div>
+<div><h3>EXPLORE</h3><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a></div>
+<div><h3>BUILD</h3><a href="/studio/">Theme Studio</a><a href="/foundry/">Core Foundry</a><a href="/flavors/">Flavors</a><a href="/labs/">Experimental Labs</a></div>
+<div><h3>RESOURCES</h3><a href="/docs/">Documentation</a><a href="https://github.com/neosmartuxui/neosmartuxui">GitHub source ↗</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/docs/PUBLIC-SOURCE-STATUS.md">Release status</a></div></div>
+<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: 79a7abb994ae · Individual maturity states apply.</span></div></footer></body></html>

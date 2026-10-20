@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Commerce order summary UI. Production use requires verified provider adapters."><meta name="theme-color" content="#f8f9fb">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/portal.css"><script type="module" src="/portal.mjs"></script>
+<title>commerce.order-summary — NeoSmartUXUI</title></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="bar-inner"><a class="brand" href="/" aria-label="NeoSmartUXUI home"><span class="mark" aria-hidden="true">N</span><span><strong>NeoSmartUXUI</strong><small>INTERFACE SYSTEM / OPEN SOURCE</small></span></a>
+<button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu ☰</button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/components/" aria-current="page">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a><a href="/labs/">Labs</a><a href="/docs/">Docs</a></nav><a class="nav-cta" href="/studio/">Open Studio ↗</a></div></header>
+<main id="main"><div class="wrap subpage detail-wrap" data-component-id="commerce.order-summary">
+<nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/components/">Components</a><span>/</span><span>Commerce</span><span>/</span><span aria-current="page">commerce.order-summary</span></nav>
+<header class="detail-head"><span class="pill">Commerce / Experimental</span><h1>commerce.order-summary</h1><p class="detail-intent">Commerce order summary UI. Production use requires verified provider adapters.</p>
+<div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/components.mjs#L188">View real source ↗</a><a class="btn" href="/labs/experimental/commerce/">Open full demo ↗</a><a class="btn" href="/studio/">Theme Studio ↗</a></div></header>
+<div class="detail-layout"><div class="detail-primary"><section class="detail-section detail-preview">
+<div class="detail-section-head"><div><span class="kicker">01 / EXISTING IMPLEMENTATION</span><h2>Live component preview</h2></div><span class="detail-proof">Experimental lab</span></div>
+<p class="detail-context">Actual experimental demo with synthetic records and simulated callbacks; no real payment, agent, or account mutations.</p><div class="detail-controls">
+<fieldset class="detail-viewport-control"><legend>Viewport</legend><button class="detail-control is-selected" type="button" data-width="desktop" aria-pressed="true">Desktop</button><button class="detail-control" type="button" data-width="mobile" aria-pressed="false">Mobile</button></fieldset>
+<label class="detail-theme-label" for="preview-theme">Demo theme<select id="preview-theme" aria-label="Demo theme"><option value="hardline-light">hardline light</option><option value="hardline-dark">hardline dark</option><option value="soft-light">soft light</option><option value="soft-dark">soft dark</option><option value="rivet-light">rivet light</option><option value="rivet-dark">rivet dark</option><option value="mono-light">mono light</option><option value="mono-dark">mono dark</option><option value="pulse-light">pulse light</option><option value="pulse-dark">pulse dark</option></select></label>
+</div>
+<div class="detail-viewport" data-width="desktop"><iframe id="actual-demo" loading="eager" title="Existing commerce.order-summary demo"></iframe></div>
+<p class="detail-footnote">This is the <a href="/labs/experimental/commerce/">existing demo</a>, framed here for inspection—not a separately invented component. Provider integrations and production release are not included.</p></section>
+<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">02 / SOURCE EVIDENCE</span><h2>Real code excerpt</h2></div><button class="detail-control" id="copy-source" type="button">Copy excerpt</button></div>
+<p class="detail-context">Verbatim code from the pinned repository revision, not a fictional installation API. Use the linked full source for implementation.</p>
+<div class="detail-code-header"><span>packages/verticals/commerce/components.mjs</span><span>JavaScript</span></div>
+<pre class="detail-code"><code id="source-code">export function renderOrderSummary(quote,{locale=&quot;en-US&quot;,heading=&quot;Order summary&quot;}={}) {
+  requireObject(quote,&quot;CartView or CheckoutQuoteView&quot;);
+  const subtotal=asMoney(quote.subtotal);
+  const total=asMoney(quote.total);
+  const discounts=quote.discounts??[];
+  const taxes=quote.taxes??[];
+  if(!Array.isArray(discounts)||!Array.isArray(taxes)) throw new TypeError(&quot;discounts and taxes must be arrays&quot;);
+  const extras=[...discounts,...taxes];
+  for(const [i,entry] of extras.entries()) {
+    requireObject(entry,&quot;adjustment &quot;+i);
+    requireString(entry.label,&quot;adjustment.label&quot;);
+    asMoney(entry.amount);
+  }
+  sameCurrency([subtotal,total,...extras.map(x=&gt;x.amount)]);
+  const e=asRoot(group(&quot;section&quot;,&quot;ns-card ns-commerce-order-summary&quot;),&quot;order-summary&quot;);
+  e.append(title(heading,&quot;h3&quot;));
+  const list=group(&quot;dl&quot;,&quot;ns-commerce-summary-list&quot;);
+  const row=(label,money,{negative=false,isTotal=false}={})=&gt;{
+    const amount=negative ? &quot;−&quot;+formatMoney(money,locale) : formatMoney(money,locale);
+    const entry=group(&quot;div&quot;,&quot;ns-commerce-summary-row&quot;+(isTotal?&quot; ns-commerce-summary-total&quot;:&quot;&quot;),node(&quot;dt&quot;,&quot;&quot;,label),node(&quot;dd&quot;,&quot;&quot;,amount));
+    list.append(entry);
+  };
+  row(&quot;Subtotal&quot;,subtotal);
+  for(const entry of discounts) row(entry.label,entry.amount,{negative:true});
+  for(const entry of taxes) row(entry.label,entry.amount);
+  row(&quot;Total&quot;,total,{isTotal:true});
+  e.append(list);
+  return e;
+}
+
+const STATUS={
+  active:[&quot;Active&quot;,&quot;success&quot;],
+  grace:[&quot;Grace period&quot;,&quot;warning&quot;],
+  expired:[&quot;Expired&quot;,&quot;error&quot;],
+  cancelled:[&quot;Cancelled&quot;,&quot;neutral&quot;],
+  refunded:[&quot;Refunded&quot;,&quot;neutral&quot;]</code></pre><a class="textlink" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/components.mjs#L188">View full implementation ↗</a></section></div>
+<aside class="detail-aside"><section class="detail-meta"><span class="kicker">03 / CANONICAL METADATA</span><h2>Component facts</h2><dl>
+<div><dt>Catalog ID</dt><dd><code>commerce.order-summary</code></dd></div><div><dt>Maturity</dt><dd>Experimental</dd></div><div><dt>Layer</dt><dd>Commerce</dd></div>
+<div><dt>Adapter source</dt><dd><a href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/commerce/components.mjs#L188">Code ↗</a></dd></div>
+
+</dl></section><section class="detail-meta"><h2>Declared states</h2><div class="detail-chips"><span>rest</span></div>
+<p class="detail-meta-note">States come from experimental implementation metadata.</p></section>
+<section class="detail-meta"><h2>Authority and dependencies</h2><div class="detail-chips"><span>core.card</span><span>core.button</span><span>core.badge</span></div></section>
+<section class="detail-meta"><h2>Related components</h2><div id="related-links" class="detail-related"></div></section></aside></div></div>
+<script type="module" src="/component-detail.mjs"></script></main>
+<footer class="footer"><div class="footer-inner"><div><strong>NeoSmartUXUI<span style="color:#92a8ff">■</span></strong><p>One composable language for accessible components, tactile interactions, themes, Blocks and complete interfaces. Apache-2.0 source.</p></div>
+<div><h3>EXPLORE</h3><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a></div>
+<div><h3>BUILD</h3><a href="/studio/">Theme Studio</a><a href="/foundry/">Core Foundry</a><a href="/flavors/">Flavors</a><a href="/labs/">Experimental Labs</a></div>
+<div><h3>RESOURCES</h3><a href="/docs/">Documentation</a><a href="https://github.com/neosmartuxui/neosmartuxui">GitHub source ↗</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/docs/PUBLIC-SOURCE-STATUS.md">Release status</a></div></div>
+<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: 79a7abb994ae · Individual maturity states apply.</span></div></footer></body></html>

@@ -1,0 +1,72 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Operations operation timeline UI; authority: read-only."><meta name="theme-color" content="#f8f9fb">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/portal.css"><script type="module" src="/portal.mjs"></script>
+<title>operations.operation-timeline — NeoSmartUXUI</title></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="bar-inner"><a class="brand" href="/" aria-label="NeoSmartUXUI home"><span class="mark" aria-hidden="true">N</span><span><strong>NeoSmartUXUI</strong><small>INTERFACE SYSTEM / OPEN SOURCE</small></span></a>
+<button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu ☰</button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/components/" aria-current="page">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a><a href="/labs/">Labs</a><a href="/docs/">Docs</a></nav><a class="nav-cta" href="/studio/">Open Studio ↗</a></div></header>
+<main id="main"><div class="wrap subpage detail-wrap" data-component-id="operations.operation-timeline">
+<nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/components/">Components</a><span>/</span><span>Operations</span><span>/</span><span aria-current="page">operations.operation-timeline</span></nav>
+<header class="detail-head"><span class="pill">Operations / Experimental</span><h1>operations.operation-timeline</h1><p class="detail-intent">Operations operation timeline UI; authority: read-only.</p>
+<div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/operations/components.mjs#L166">View real source ↗</a><a class="btn" href="/labs/experimental/operations/">Open full demo ↗</a><a class="btn" href="/studio/">Theme Studio ↗</a></div></header>
+<div class="detail-layout"><div class="detail-primary"><section class="detail-section detail-preview">
+<div class="detail-section-head"><div><span class="kicker">01 / EXISTING IMPLEMENTATION</span><h2>Live component preview</h2></div><span class="detail-proof">Experimental lab</span></div>
+<p class="detail-context">Actual experimental demo with synthetic records and simulated callbacks; no real payment, agent, or account mutations.</p><div class="detail-controls">
+<fieldset class="detail-viewport-control"><legend>Viewport</legend><button class="detail-control is-selected" type="button" data-width="desktop" aria-pressed="true">Desktop</button><button class="detail-control" type="button" data-width="mobile" aria-pressed="false">Mobile</button></fieldset>
+<label class="detail-theme-label" for="preview-theme">Demo theme<select id="preview-theme" aria-label="Demo theme"><option value="hardline-light">hardline light</option><option value="hardline-dark">hardline dark</option><option value="soft-light">soft light</option><option value="soft-dark">soft dark</option><option value="rivet-light">rivet light</option><option value="rivet-dark">rivet dark</option><option value="mono-light">mono light</option><option value="mono-dark">mono dark</option><option value="pulse-light">pulse light</option><option value="pulse-dark">pulse dark</option></select></label>
+</div>
+<div class="detail-viewport" data-width="desktop"><iframe id="actual-demo" loading="eager" title="Existing operations.operation-timeline demo"></iframe></div>
+<p class="detail-footnote">This is the <a href="/labs/experimental/operations/">existing demo</a>, framed here for inspection—not a separately invented component. Provider integrations and production release are not included.</p></section>
+<section class="detail-section"><div class="detail-section-head"><div><span class="kicker">02 / SOURCE EVIDENCE</span><h2>Real code excerpt</h2></div><button class="detail-control" id="copy-source" type="button">Copy excerpt</button></div>
+<p class="detail-context">Verbatim code from the pinned repository revision, not a fictional installation API. Use the linked full source for implementation.</p>
+<div class="detail-code-header"><span>packages/verticals/operations/components.mjs</span><span>JavaScript</span></div>
+<pre class="detail-code"><code id="source-code">export function renderOperationTimeline({heading:label,events}){
+ str(label,&#39;timeline heading&#39;);arr(events,&#39;timeline events&#39;);unique(events,&#39;id&#39;);
+ const e=component(dom(&#39;section&#39;,&#39;ns-card ns-ops-timeline&#39;,heading(label)),&#39;operation-timeline&#39;);
+ const list=el(&#39;ol&#39;,&#39;ns-ops-list&#39;);
+ for(const event of events){
+   obj(event,&#39;event&#39;);str(event.action,&#39;action&#39;);str(event.occurredAt,&#39;occurredAt&#39;);
+   const li=dom(&#39;li&#39;,&#39;ns-ops-row&#39;,dom(&#39;strong&#39;,&#39;&#39;,event.action),muted(event.occurredAt));
+   if(event.actor!==undefined)li.append(muted(&#39;Actor: &#39;+str(event.actor,&#39;actor&#39;)));
+   if(event.outcome!==undefined)li.append(badge(oneOf(event.outcome,[&#39;ok&#39;,&#39;warning&#39;,&#39;failed&#39;,&#39;pending&#39;],&#39;outcome&#39;)));
+   list.append(li);
+ }
+ if(!events.length)e.append(muted(&#39;No recorded events. Missing events are not reconstructed.&#39;));
+ e.append(list);return e;
+}
+export function renderUsageChart({label,points,unit=&#39;events&#39;}){
+ str(label,&#39;chart label&#39;);str(unit,&#39;chart unit&#39;);arr(points,&#39;chart points&#39;);
+ if(points.length&lt;2||points.length&gt;60)throw new TypeError(&#39;Usage chart accepts 2–60 points&#39;);
+ const labels=new Set();
+ for(const p of points){obj(p,&#39;point&#39;);str(p.label,&#39;point label&#39;);finite(p.value,&#39;point value&#39;);if(labels.has(p.label))throw new TypeError(&#39;Duplicate point label&#39;);labels.add(p.label)}
+ const e=component(dom(&#39;section&#39;,&#39;ns-card ns-ops-chart&#39;,heading(label)),&#39;usage-chart&#39;);
+ const max=Math.max(...points.map(p=&gt;p.value),1);
+ const svg=document.createElementNS(&#39;http://www.w3.org/2000/svg&#39;,&#39;svg&#39;);
+ svg.setAttribute(&#39;viewBox&#39;,&#39;0 0 480 180&#39;);svg.setAttribute(&#39;role&#39;,&#39;img&#39;);svg.setAttribute(&#39;aria-label&#39;,label+&#39; bar chart with &#39;+points.length+&#39; values in &#39;+unit);
+ const svgTitle=document.createElementNS(&#39;http://www.w3.org/2000/svg&#39;,&#39;title&#39;);svgTitle.textContent=label+&#39; usage by period&#39;;svg.append(svgTitle);
+ const step=440/points.length;
+ for(let i=0;i&lt;points.length;i++){
+   const h=130*(points[i].value/max);
+   const rect=document.createElementNS(&#39;http://www.w3.org/2000/svg&#39;,&#39;rect&#39;);
+   rect.setAttribute(&#39;x&#39;,String(20+i*step+step*.12));rect.setAttribute(&#39;y&#39;,String(150-h));
+   rect.setAttribute(&#39;width&#39;,String(step*.76));rect.setAttribute(&#39;height&#39;,String(h));
+   rect.setAttribute(&#39;fill&#39;,&#39;currentColor&#39;);
+   svg.append(rect);
+ }
+ const details=el(&#39;table&#39;,&#39;ns-ops-visually-hidden&#39;);
+ const caption=el(&#39;caption&#39;,&#39;&#39;,label+&#39; values&#39;);details.append(caption);
+ const thead=dom(&#39;thead&#39;,&#39;&#39;,dom(&#39;tr&#39;,&#39;&#39;,el(&#39;th&#39;,&#39;&#39;,&#39;Period&#39;),el(&#39;th&#39;,&#39;&#39;,unit)));details.append(thead);</code></pre><a class="textlink" href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/operations/components.mjs#L166">View full implementation ↗</a></section></div>
+<aside class="detail-aside"><section class="detail-meta"><span class="kicker">03 / CANONICAL METADATA</span><h2>Component facts</h2><dl>
+<div><dt>Catalog ID</dt><dd><code>operations.operation-timeline</code></dd></div><div><dt>Maturity</dt><dd>Experimental</dd></div><div><dt>Layer</dt><dd>Operations</dd></div>
+<div><dt>Adapter source</dt><dd><a href="https://github.com/neosmartuxui/neosmartuxui/blob/79a7abb994ae527349500c711202abf7a830ded8/packages/verticals/operations/components.mjs#L166">Code ↗</a></dd></div>
+
+</dl></section><section class="detail-meta"><h2>Declared states</h2><div class="detail-chips"><span>rest</span></div>
+<p class="detail-meta-note">States come from experimental implementation metadata.</p></section>
+<section class="detail-meta"><h2>Authority and dependencies</h2><div class="detail-chips"><span>Authority: read-only</span><span>core.card</span><span>core.badge</span><span>core.button</span></div></section>
+<section class="detail-meta"><h2>Related components</h2><div id="related-links" class="detail-related"></div></section></aside></div></div>
+<script type="module" src="/component-detail.mjs"></script></main>
+<footer class="footer"><div class="footer-inner"><div><strong>NeoSmartUXUI<span style="color:#92a8ff">■</span></strong><p>One composable language for accessible components, tactile interactions, themes, Blocks and complete interfaces. Apache-2.0 source.</p></div>
+<div><h3>EXPLORE</h3><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a></div>
+<div><h3>BUILD</h3><a href="/studio/">Theme Studio</a><a href="/foundry/">Core Foundry</a><a href="/flavors/">Flavors</a><a href="/labs/">Experimental Labs</a></div>
+<div><h3>RESOURCES</h3><a href="/docs/">Documentation</a><a href="https://github.com/neosmartuxui/neosmartuxui">GitHub source ↗</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/docs/PUBLIC-SOURCE-STATUS.md">Release status</a></div></div>
+<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: 79a7abb994ae · Individual maturity states apply.</span></div></footer></body></html>

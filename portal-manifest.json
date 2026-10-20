@@ -1,6 +1,6 @@
 {
   "schema": "neosmartuxui/portal-artifact@1",
-  "sourceSha": "1ad97610b300d4b838e688480c7ec6bdde7ca749",
+  "sourceSha": "79a7abb994ae527349500c711202abf7a830ded8",
   "sections": [
     "/",
     "/components/",
@@ -36,43 +36,583 @@
   "files": [
     {
       "path": "blocks/index.html",
-      "sha256": "5a5a2e4338cd98c4ab1443af7b35995a4c6081a125245324ccc8bfff0c992eb3",
+      "sha256": "102c09ed257419144a80ecddb0bb3fa022e833afd9c2430aedfed46cd9baafd7",
       "bytes": 3911
     },
     {
+      "path": "component-detail.mjs",
+      "sha256": "41a8d43d464e17c36be2d275e687d6bc4790a22a5c548b63a38813a6d6083bee",
+      "bytes": 3160
+    },
+    {
+      "path": "components/block/account-nav/index.html",
+      "sha256": "e6a3735b7489638812ff1a5af74b4131bcae338857fe5a0ced071a79544669c8",
+      "bytes": 10222
+    },
+    {
+      "path": "components/block/bundle-builder/index.html",
+      "sha256": "c6a0285c6fb34f4c765dd276a5f0c88132f40e9e9f4d80ffe4cafd4cd01c7f73",
+      "bytes": 10246
+    },
+    {
+      "path": "components/block/guarantee/index.html",
+      "sha256": "2e6f2f01803ebcc902f7b55009dfa03319249beda5bfe1292932ac1354d0a4cb",
+      "bytes": 10206
+    },
+    {
+      "path": "components/block/plan-comparison/index.html",
+      "sha256": "1933ba74609d386cca7173013380beb872250808d1db0c5828a47083d81555b9",
+      "bytes": 10254
+    },
+    {
+      "path": "components/block/promo-band/index.html",
+      "sha256": "b8048943c648b7317c39df7852b66a899f2c8b5ecccc3e15c13bb8a5ea2778b9",
+      "bytes": 10214
+    },
+    {
+      "path": "components/block/testimonials/index.html",
+      "sha256": "421ba2e965915dea5c392a4c0607723d78b1f8fd12d6cca4da4daa03150529bb",
+      "bytes": 10230
+    },
+    {
+      "path": "components/block/trust-strip/index.html",
+      "sha256": "4fbf527d1d9ab5ff16f02e535eb6064a686dc2dbc4ed1d9dbfc6147541cfb3dd",
+      "bytes": 10222
+    },
+    {
       "path": "components/catalog.json",
-      "sha256": "d2404f80ceda0fd0377b9f91b0bd9e37947c5663c0fcc1aee9bf33ec9c5b433c",
-      "bytes": 24278
+      "sha256": "bb479f5ffd5370a62f7b4a474ce2e032f03a8aaca7d0cf0f07d63be295989f71",
+      "bytes": 24851
+    },
+    {
+      "path": "components/commerce/activation-row/index.html",
+      "sha256": "1d88ce662a34b89e69eeb90d2c2605272eb76528cd2fe347bc7bba60da8f8547",
+      "bytes": 9739
+    },
+    {
+      "path": "components/commerce/cart-line/index.html",
+      "sha256": "453c217a9aa0f07813be84dadf4afd014d4c1705d05bfbe79ad1b603f540d4cb",
+      "bytes": 8770
+    },
+    {
+      "path": "components/commerce/checkout-field/index.html",
+      "sha256": "6a8118bd6fe1aa77954594df216127df624ab91c4292cdf7a5b20a93eff1b8db",
+      "bytes": 9846
+    },
+    {
+      "path": "components/commerce/checkout-steps/index.html",
+      "sha256": "7df6eb037ed7a62eb1b8a886ebeb4b3a6fa3f956e5a1eec834391cde9a82b49b",
+      "bytes": 9566
+    },
+    {
+      "path": "components/commerce/coupon/index.html",
+      "sha256": "9bf705c00dbbccc0ac4493bde68372d3fdd0e47865569fbc0e43795ddf686a50",
+      "bytes": 9719
+    },
+    {
+      "path": "components/commerce/download-entitlement/index.html",
+      "sha256": "4e1f5664d1389fa6460a33415cd8cff758075ce38aff287b808f5612da13bf00",
+      "bytes": 9134
+    },
+    {
+      "path": "components/commerce/download-row/index.html",
+      "sha256": "f40b6c53612ae12eef31702a61f724242dc435c1b5e6a2ab083a4a398a22df9e",
+      "bytes": 9841
+    },
+    {
+      "path": "components/commerce/invoice-details/index.html",
+      "sha256": "01d301788a1b2e4d1222292801d0b35da2c7214533f10599e8ea564a6501fbb4",
+      "bytes": 9389
+    },
+    {
+      "path": "components/commerce/invoice-history/index.html",
+      "sha256": "88429baa91a6ae9cd3968aa828da541a6f9e25c35eb5871bee57db8f5515a550",
+      "bytes": 9851
+    },
+    {
+      "path": "components/commerce/license-card/index.html",
+      "sha256": "b0a7a3c9877329926a37b90d0b4b3fda773553fe855e52c798d279bb91649900",
+      "bytes": 9603
+    },
+    {
+      "path": "components/commerce/license-selector/index.html",
+      "sha256": "2ceeed7f603fb10e00679ba96b2b818d559fd5cf538ce11d1e039c76ed100850",
+      "bytes": 9387
+    },
+    {
+      "path": "components/commerce/license-status/index.html",
+      "sha256": "c4f50c69a37a5ab4f553ceb7eaa27d7b7449efde36462dcf31e9d6f91cac5165",
+      "bytes": 9373
+    },
+    {
+      "path": "components/commerce/order-confirmation/index.html",
+      "sha256": "8c35ff3bae8c06552836fd206ab43c2ede4dfa50c87f2235dd24cc6cafa23d6b",
+      "bytes": 9399
+    },
+    {
+      "path": "components/commerce/order-summary/index.html",
+      "sha256": "1baae94f83809ed1ccb0d84028809ef01f038b11bf5337d274fbee29a4b5530e",
+      "bytes": 8865
+    },
+    {
+      "path": "components/commerce/ownership-timeline/index.html",
+      "sha256": "79b912678f2ab5f934852a9840aa88ba90447e8530b6660dfac04778df9d7927",
+      "bytes": 8787
+    },
+    {
+      "path": "components/commerce/ownership-transfer/index.html",
+      "sha256": "89e849f4b5b3fcbc4ebd24adc41ad9b64bf8757fb6deba61bf8ac60df29d3fe7",
+      "bytes": 9906
+    },
+    {
+      "path": "components/commerce/payment-failure/index.html",
+      "sha256": "0fc7a3aa31cd3a5d03812e2a99688242e4d23be8871812e12e245d8fc7a9010b",
+      "bytes": 9261
+    },
+    {
+      "path": "components/commerce/payment-method/index.html",
+      "sha256": "e5838b38dc23e6e64bd4ebbb627f18e6e34f72a779db22f87f7a3b331086ae98",
+      "bytes": 9394
+    },
+    {
+      "path": "components/commerce/payment-recovery/index.html",
+      "sha256": "572a56d165e9fb2c92402ff70a54c6ada94ed917f699404ab2f33d241180d7c6",
+      "bytes": 9537
+    },
+    {
+      "path": "components/commerce/plan-change/index.html",
+      "sha256": "f846888941ffbe87b3754cc0195f831de94a3054eb3fb32527b4aa456eec1e2e",
+      "bytes": 10315
+    },
+    {
+      "path": "components/commerce/pricing-tier/index.html",
+      "sha256": "54d45f318222c9d257111892f8c87721e03e9f1ab8fd35d8e2b968f7559226f2",
+      "bytes": 8913
+    },
+    {
+      "path": "components/commerce/processing-state/index.html",
+      "sha256": "dd6dd182fa6ac7f48ac5004b3edbe639eb714fb0f87b03ad5ae5a2def8d31399",
+      "bytes": 9376
+    },
+    {
+      "path": "components/commerce/product-card/index.html",
+      "sha256": "5171a52658a4a67298109a75713d69e8c4a40ba246111a461becf9409b451609",
+      "bytes": 8960
+    },
+    {
+      "path": "components/commerce/product-detail/index.html",
+      "sha256": "a54f638bb25fb5cb0287bf0b985154ea75c9bbcd9ff0303134a592702034a639",
+      "bytes": 8945
+    },
+    {
+      "path": "components/commerce/product-gallery/index.html",
+      "sha256": "9a4de60168f8f75e041c33fa07b5ab9d46a4e8b1741b0d98e047c52903386204",
+      "bytes": 9051
+    },
+    {
+      "path": "components/commerce/product-media/index.html",
+      "sha256": "d0768d9819725f18e6b082978847427b71bf3aa4f0b375bd714b2ca64d489d8d",
+      "bytes": 8962
+    },
+    {
+      "path": "components/commerce/product-price/index.html",
+      "sha256": "50e0068e2e68f25713eaf94a427d3faeb8155bb6f49c0510e027e138dbb7c808",
+      "bytes": 9065
+    },
+    {
+      "path": "components/commerce/purchase-history-row/index.html",
+      "sha256": "239aab5bdfdd9bce299599d1dd7bb863d1fde38927b94ef107ac0ff8875688cb",
+      "bytes": 9787
+    },
+    {
+      "path": "components/commerce/receipt/index.html",
+      "sha256": "62ff52356b3f1eb5b56d1661874916784a87816c2f36f8128a478ca1094bc69a",
+      "bytes": 8691
+    },
+    {
+      "path": "components/commerce/renewal-note/index.html",
+      "sha256": "724530beebf6d4e5cfa46dc2f1a7f53d073307b7cfcc14cdf139cd91469c63f3",
+      "bytes": 9131
+    },
+    {
+      "path": "components/commerce/renewal-state/index.html",
+      "sha256": "2ab04983ce5e670f368f152bd59cdca0fc39bd916ea5e80cc8d4559b126d0e1c",
+      "bytes": 10180
+    },
+    {
+      "path": "components/commerce/review-summary/index.html",
+      "sha256": "12b242ced49a215246afbed78d23ecd25f636b3fdfaeebc36c52e9f7ef7d7324",
+      "bytes": 9493
+    },
+    {
+      "path": "components/commerce/seat-usage/index.html",
+      "sha256": "bb93bd7cb46f35b387c448417b779dd81b8d273d0e5fa101ec1df939f2bf070f",
+      "bytes": 9215
+    },
+    {
+      "path": "components/commerce/subscription-management/index.html",
+      "sha256": "74dca5ed4cf29ff729d420aafc2dfdce26eac96a25e225ad87f445c12d26ce30",
+      "bytes": 9758
+    },
+    {
+      "path": "components/commerce/update-eligibility/index.html",
+      "sha256": "d519475c208fab99771c49aa8d18ce2e478d679126542a4d56956e57f7de49b7",
+      "bytes": 10050
+    },
+    {
+      "path": "components/core/accordion/index.html",
+      "sha256": "35190d3509380570d0ba037491d5d3425a42f2aa3654f7512d2e7b25fae42e74",
+      "bytes": 8813
+    },
+    {
+      "path": "components/core/alert-dialog/index.html",
+      "sha256": "da5cf8bb094cc1409df45ac8caae353e9ce3d245d614b3c72eb43c04da6634de",
+      "bytes": 8420
+    },
+    {
+      "path": "components/core/alert/index.html",
+      "sha256": "8445957337c3fb2296f53fe13a2dc567f422b81bcaa28cfefe05d98f1bbd9741",
+      "bytes": 7886
+    },
+    {
+      "path": "components/core/badge/index.html",
+      "sha256": "63b2af5cce44792046a1a80905560fc6cbda3898b0baadd084041c8efeae2bba",
+      "bytes": 7827
+    },
+    {
+      "path": "components/core/breadcrumb/index.html",
+      "sha256": "3af5fc733ffd150a9e5af40e556f97c45c5a5a468eaaa92d27942fdb7f9cc23b",
+      "bytes": 7612
+    },
+    {
+      "path": "components/core/button-group/index.html",
+      "sha256": "f896ce5281829f0c39574b96c2f0e61c94dbec06344133f621cfe5b3fdd24545",
+      "bytes": 7562
+    },
+    {
+      "path": "components/core/button/index.html",
+      "sha256": "047fd152899a20816ce8212ea1b4a7f7a8623c28decdc9e82379078ca6bcdf50",
+      "bytes": 7703
+    },
+    {
+      "path": "components/core/calendar/index.html",
+      "sha256": "51994b30c390ac2bfb7507521ac5641c519251d7d0ab980ee63824c6eabc90bd",
+      "bytes": 8472
+    },
+    {
+      "path": "components/core/card/index.html",
+      "sha256": "645be50786e9887fdfc5b1627bbf766d5d2f61d8947297b8e2073d57b25c22fd",
+      "bytes": 7629
+    },
+    {
+      "path": "components/core/checkbox/index.html",
+      "sha256": "42e5f45d585510a365fc85210d72972fd75b015191177943857e25a810450f79",
+      "bytes": 8021
+    },
+    {
+      "path": "components/core/color-picker/index.html",
+      "sha256": "1756442227413409c93fe4574975ee037f84bdecc24b3e2a6f28c185c877bc19",
+      "bytes": 8397
+    },
+    {
+      "path": "components/core/combobox/index.html",
+      "sha256": "5a0a108f61037179af4961a1d729b8d1179b30ea928b44bbe319a54d4cc40862",
+      "bytes": 9477
+    },
+    {
+      "path": "components/core/context-menu/index.html",
+      "sha256": "b0f614344ea3a9f0179b771457db8a2a9a3bcdc4dce58d0ba3d858ee8d9f43ac",
+      "bytes": 9152
+    },
+    {
+      "path": "components/core/data-grid/index.html",
+      "sha256": "12318487c4d04679709eb509f4d9308d6e95203b5f58ac86bd7afd097a015112",
+      "bytes": 9384
+    },
+    {
+      "path": "components/core/date-picker/index.html",
+      "sha256": "2c89c5b768de0a555fac4704fe8929cfebfec09476be581d016f640233f7a1de",
+      "bytes": 9392
+    },
+    {
+      "path": "components/core/description-list/index.html",
+      "sha256": "dbe450b5954aa6fcba0b4b687d8199c37f129db2d7bfb64e48337ab8215da46a",
+      "bytes": 8186
+    },
+    {
+      "path": "components/core/dialog/index.html",
+      "sha256": "7c553e5796aac61a86eab91f6af212091642981f4d76a2e05e7e15d47808f544",
+      "bytes": 10476
+    },
+    {
+      "path": "components/core/drawer/index.html",
+      "sha256": "f6c4d1e56dd660c270a598fa92a356a2d3e6dc8a87dae66c8ffbc303a8665617",
+      "bytes": 8650
+    },
+    {
+      "path": "components/core/dropdown-menu/index.html",
+      "sha256": "2f097d43c033a89da665754b32e9c7835b335f8a0ced5b187cb9f308e9302349",
+      "bytes": 10033
+    },
+    {
+      "path": "components/core/field/index.html",
+      "sha256": "3696b65cdc0f4b570d36ee0644f535585146655dfff11b345d248136e361d084",
+      "bytes": 7741
+    },
+    {
+      "path": "components/core/file-upload/index.html",
+      "sha256": "7c1b1564aec38135481725f1a3a8fd71437574efb162c444465f23fa10cf0b04",
+      "bytes": 8630
+    },
+    {
+      "path": "components/core/hover-card/index.html",
+      "sha256": "333d3fde34e85e84597962500bfed9274e0807eb602195036e90676ea5442a69",
+      "bytes": 9552
+    },
+    {
+      "path": "components/core/input-group/index.html",
+      "sha256": "c2ab04ff8d5cfebe581ffb13ab63838338d0c9a9838216b76d2c0c0f55deb073",
+      "bytes": 8038
+    },
+    {
+      "path": "components/core/input-otp/index.html",
+      "sha256": "1e653b4a6b475f418c54313034161622f4919578e739b9fb3b062586ec8a7e10",
+      "bytes": 8701
+    },
+    {
+      "path": "components/core/input/index.html",
+      "sha256": "c023ca7b46ba8e46dd17ac55a9b57070655e56de3f4a47b308cf1cf4bf431904",
+      "bytes": 7740
+    },
+    {
+      "path": "components/core/item/index.html",
+      "sha256": "874f643e113e5a87781ee2f499a3b4ebbaac247bc3e19a4ff7a847dfffc08a6e",
+      "bytes": 7894
+    },
+    {
+      "path": "components/core/label/index.html",
+      "sha256": "7b6781bdc9e9aa2a1a75f59b8c6aa9d10bd5496d167d2de1bb079b3a36dd8ce2",
+      "bytes": 7438
+    },
+    {
+      "path": "components/core/list/index.html",
+      "sha256": "ac0397a37a7fe16d44561eb8d0479255c6b6b75ceeb4a0cc4471f8a0e1727952",
+      "bytes": 7882
+    },
+    {
+      "path": "components/core/menubar/index.html",
+      "sha256": "c096f9b4430051c5d53cce159af3b4d84b7ce7c3069c26c7bee2d6d38ca04a2b",
+      "bytes": 9065
+    },
+    {
+      "path": "components/core/multi-select/index.html",
+      "sha256": "cd3a710140ee29cde3ba8726d8784017571f662c8a49004ada542faf57df91d3",
+      "bytes": 9462
+    },
+    {
+      "path": "components/core/navigation-menu/index.html",
+      "sha256": "e1ef429a10c2e02fb22b8c44a91eb16861873fd58d7eec12e6f2e12aafe20751",
+      "bytes": 9597
+    },
+    {
+      "path": "components/core/number-field/index.html",
+      "sha256": "283fef05055d9da0e69e1112571f9349042fcbebdca2b3b88242ae8eac924e32",
+      "bytes": 9306
+    },
+    {
+      "path": "components/core/pagination/index.html",
+      "sha256": "ef7d552020ef03ce189d76dff05ff5f34e63ab1e7595786054990d058702d423",
+      "bytes": 8129
+    },
+    {
+      "path": "components/core/popover/index.html",
+      "sha256": "d8ef9520d2f551ada4fa6b6ea65fccd824f9f1fddf7996af79e5bbbd46421032",
+      "bytes": 9006
+    },
+    {
+      "path": "components/core/progress/index.html",
+      "sha256": "43963dbd43ddecbf6b04fa84b45849bcfdf3849f049756181f57572fef9bef13",
+      "bytes": 7888
+    },
+    {
+      "path": "components/core/radio/index.html",
+      "sha256": "2ac49da2c2b248faf4cf6677ef6d525f789ea36942f6080ed62647771ae6f05f",
+      "bytes": 8127
+    },
+    {
+      "path": "components/core/segmented-control/index.html",
+      "sha256": "87913c24469463ccdbfee019136de7d6e11549a495bf5ca6b01a483868fe5263",
+      "bytes": 9020
+    },
+    {
+      "path": "components/core/select/index.html",
+      "sha256": "f09480fdf9f721f294cdf67d7b99c865cb633aacf62ffb0cc84fad6cbf0f79f4",
+      "bytes": 8391
+    },
+    {
+      "path": "components/core/separator/index.html",
+      "sha256": "b51476189bfa7872f042008c6518260dee2e8cbb5ad7f74c7661990f23938a9d",
+      "bytes": 7382
+    },
+    {
+      "path": "components/core/slider/index.html",
+      "sha256": "27a3e548efa6b354e84a5efba32afa0cfd3df11a4c681f85acb4790c513b0808",
+      "bytes": 9316
+    },
+    {
+      "path": "components/core/spinner/index.html",
+      "sha256": "a6282f0018c499ea91eb051094ddeca5d42745a059b31ba24d35db9d52d91d4d",
+      "bytes": 7536
+    },
+    {
+      "path": "components/core/switch/index.html",
+      "sha256": "4c5ac1055cc64c8864df5acd027667c40ca35b342e5f30ca0baeabdce9d187c7",
+      "bytes": 7672
+    },
+    {
+      "path": "components/core/table/index.html",
+      "sha256": "1730329634085f055241c7001da1ed429703631b4cac0c32aa2cd67065706033",
+      "bytes": 7895
+    },
+    {
+      "path": "components/core/tabs/index.html",
+      "sha256": "ea7fda1847cf178b15b11bf5b6d436cbf9bd9d08641e0d201bfddcd506b5dc0b",
+      "bytes": 8571
+    },
+    {
+      "path": "components/core/textarea/index.html",
+      "sha256": "50328df5b31afd881b149d6d6669d2f36f05f36e4caa326935ae3c4540dabb28",
+      "bytes": 7815
+    },
+    {
+      "path": "components/core/time-picker/index.html",
+      "sha256": "451ec80500ebbe4dcd6c56b328c68431aabea5411ab6ac3b1924be9aa54b4ad9",
+      "bytes": 8457
+    },
+    {
+      "path": "components/core/toast/index.html",
+      "sha256": "81e6cc7e0c924c821a44742a98628adfca2bf52725ec1a38c93da2f0a4256af5",
+      "bytes": 8936
+    },
+    {
+      "path": "components/core/toggle-group/index.html",
+      "sha256": "57373a25153800f3a88fa930d51369136a0050f71c13be492985fb4761a67c61",
+      "bytes": 8917
+    },
+    {
+      "path": "components/core/toggle/index.html",
+      "sha256": "b8284e8feefdffa5ff4bbfc695e8ad64c933a241dc23e6b079180d8af500e81d",
+      "bytes": 8438
+    },
+    {
+      "path": "components/core/tooltip/index.html",
+      "sha256": "784f0a2618ed0248c7dc8ddc195dc821fbe993e630cef805b7726d4bf88be403",
+      "bytes": 9025
+    },
+    {
+      "path": "components/details.json",
+      "sha256": "8f8e7842455f39cf43cf207a7deec6d393bc5593535fbb1ab38822e30c86b5dc",
+      "bytes": 310161
     },
     {
       "path": "components/index.html",
-      "sha256": "a634ebd840866e52fb2b0b752c0c4b50473596946b625a56f5ac2fcbd668d8f5",
+      "sha256": "6f6af1134cbdb3a68e7492219e80d55365b3258a5209f5b139d5fd9d53b3f9f2",
       "bytes": 3357
     },
     {
+      "path": "components/operations/activation-meter/index.html",
+      "sha256": "7f3a5cdc9b1abd97f5972add6db23369a707659cda26a755e2e0b8c00622ff0a",
+      "bytes": 9898
+    },
+    {
+      "path": "components/operations/agent-approval-plan/index.html",
+      "sha256": "53bb536c1849a510191a50f8022f0ab3ed8e7f16c7617a47404a971036b06801",
+      "bytes": 9949
+    },
+    {
+      "path": "components/operations/integration-status/index.html",
+      "sha256": "1a805078741b30e83d9f10aa62f6198d3ee4f5e7aee05417e9ac74805a554bb4",
+      "bytes": 9805
+    },
+    {
+      "path": "components/operations/operation-timeline/index.html",
+      "sha256": "4d5af4f54f98796acd6f65faf95805199b3709c3a6537250645d11caa9f21651",
+      "bytes": 10010
+    },
+    {
+      "path": "components/operations/permission-scope/index.html",
+      "sha256": "e587679da7623c4d933b7b6ea4a64480850ae6bd54fa4b8fdde93af5f298225a",
+      "bytes": 9995
+    },
+    {
+      "path": "components/operations/release-artifact/index.html",
+      "sha256": "c5157978c4802d0671c38ee4618f766eb9c7f88ce52e414a0a906c736d350bfe",
+      "bytes": 9562
+    },
+    {
+      "path": "components/operations/risk-indicator/index.html",
+      "sha256": "e025f7ba5b81ece60883d03c2cb01acc18cbbcb06f1b8a4c0d93b1153f4ba04d",
+      "bytes": 9909
+    },
+    {
+      "path": "components/operations/rollout-stages/index.html",
+      "sha256": "c069a82f19e42f5d2af38ce7b52883d2e6315241816ade16dedeb1e0bd3b737d",
+      "bytes": 9684
+    },
+    {
+      "path": "components/operations/secret-reference/index.html",
+      "sha256": "cffeb2f1b72dd059149f059e0d812b9e4b9b945fab22a24cd61aba92f90603cb",
+      "bytes": 9627
+    },
+    {
+      "path": "components/operations/stat-card/index.html",
+      "sha256": "4b4169fcf30c49e5769eabfb0187368c1f720093b481ffc79b28da287d443eb4",
+      "bytes": 9795
+    },
+    {
+      "path": "components/operations/usage-chart/index.html",
+      "sha256": "feaad293429f8d934b7bebc3d3e55b917d99a2fd96f24b73efe1e8067a1d2a0b",
+      "bytes": 10096
+    },
+    {
+      "path": "components/operations/webhook-delivery-log/index.html",
+      "sha256": "4a24943094d54158979002107e9f390615e5a5b0eb566c5a45c323c786e371d4",
+      "bytes": 9780
+    },
+    {
+      "path": "components/template/license-ops-dashboard/index.html",
+      "sha256": "f7f1a0975a988ce6557d21e36cea99e607bd8b7c73047f592fa5f0303cc44737",
+      "bytes": 9140
+    },
+    {
+      "path": "components/template/release-operations-console/index.html",
+      "sha256": "10734f789760d4722dcad31f5e572a926e6e7beab1f00fa8d2408c3f3cd179c0",
+      "bytes": 9180
+    },
+    {
       "path": "docs/index.html",
-      "sha256": "0390c25a9b41b0f0ad1bfbc3d8fc953f1f35475c0b3c16856fb2a5fdaf202f1b",
+      "sha256": "b551253e56a74a5760488e232f3005e2a4e1bb3abf75adb39562f61d5da33a5e",
       "bytes": 3986
     },
     {
       "path": "flavors/index.html",
-      "sha256": "d5fe209cbf7f4167d661212443221af59b3c0875985e5da0968bfe35723d05bf",
+      "sha256": "12ad4e26ac2916dcf5b96aff2fccbae723eaf823cc3ba7f0672b311e4280d2ba",
       "bytes": 4677
     },
     {
       "path": "index.html",
-      "sha256": "b05bbd448f442ebdb5e00ad2f0ea94b5b9f5f8aaa757f8fa0a4e06cf45ae293f",
+      "sha256": "bf4ec4fafce6a3135d6089b3178b78a0051ca44fcfc49aab2db7e1e110c120b1",
       "bytes": 11131
     },
     {
       "path": "labs/index.html",
-      "sha256": "613e92124b60b1fda24ceae9cbb25a8c26f47422dcf45e0401c41695c93856d0",
+      "sha256": "99ca640eb326d8858e9949c6708292c6eaf5a2cb1d99d4a939fb54d7250a89ce",
       "bytes": 4298
     },
     {
       "path": "portal.css",
-      "sha256": "a956356934e36fa9a0b5248f6b4aed9c3c786a16320642c0cfff10a5198b7d33",
-      "bytes": 22161
+      "sha256": "d9b2628f14a998192681db50cdfa2513befe5db007cbad76986ee2008d88fb0f",
+      "bytes": 28630
     },
     {
       "path": "portal.mjs",
@@ -81,14 +621,14 @@
     },
     {
       "path": "templates/index.html",
-      "sha256": "97b08d687634a722ef44425cd6ed1147ed1bd205f3e7ba32bd056ba80163e009",
+      "sha256": "2bccbd163483f55e0333af047c2c25f4901df83729c559623a6392eec8260816",
       "bytes": 3508
     },
     {
       "path": "themes/index.html",
-      "sha256": "c1e43b209a152c81e3f071b017771956a6fe19ce50665210670cae24bdd6de4c",
+      "sha256": "f13b964d1a7e7d52037f6268a9b1ad233295748627840cc873f6399c75c2f068",
       "bytes": 6609
     }
   ],
-  "artifactHash": "a6cd220c1bd4dee81bab3f7523760da31e3d11fbf5f266f12cb9ea62df4359d9"
+  "artifactHash": "bb5ebe55fda7250e574aec4e7522ad6de3ba34d5024a235fc75d54a6f2b24fef"
 }
