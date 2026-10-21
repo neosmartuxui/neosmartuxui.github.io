@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="An accessible system of UI components, themes, Blocks, Templates and interactive Labs."><meta name="theme-color" content="#f8f9fb">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="stylesheet" href="/portal.css"><script type="module" src="/portal.mjs"></script>
+<title>Framework integration — private ESM — NeoSmartUXUI</title></head><body><a class="skip" href="#main">Skip to content</a>
+<header class="bar"><div class="bar-inner"><a class="brand" href="/" aria-label="NeoSmartUXUI home"><span class="mark" aria-hidden="true">N</span><span><strong>NeoSmartUXUI</strong><small>INTERFACE SYSTEM / OPEN SOURCE</small></span></a>
+<button type="button" class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu ☰</button>
+<nav class="nav" id="site-nav" aria-label="Main navigation"><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a><a href="/labs/">Labs</a><a href="/docs/" aria-current="page">Docs</a></nav><a class="nav-cta" href="/studio/">Open Studio ↗</a></div></header>
+<main id="main"><div class="wrap subpage detail-wrap"><nav class="detail-breadcrumb" aria-label="Breadcrumb"><a href="/docs/">Docs</a><span>/</span><span>Integrations</span></nav><header class="detail-head"><span class="pill">PRIVATE LOCAL PACKAGE / VERIFIED EXPORTS</span><h1>Framework integration</h1><p class="detail-intent">Use actual browser DOM adapters with Vanilla JS, React and Vue. These are lifecycle wiring examples, not React or Vue component exports.</p><div class="detail-head-actions"><a class="btn btn-primary" href="https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/core-exports.mjs">Inspect real exports ↗</a><a class="btn" href="/components/">Component Explorer ↗</a></div></header><section class="detail-section"><div class="detail-section-head"><div><span class="kicker">LOCAL ESM ONLY</span><h2>Installation boundary</h2></div></div><p class="detail-context">Run <code>npm run build:library:local</code> in the repository and link its private <code>artifacts/library-package</code> directory into your consuming workspace. The local package is <code>@neosmartuxui/library</code> version 0.0.0-local, marked private. It is NOT available from the npm registry. Import <code>@neosmartuxui/library/core</code>, the local <code>styles/core.css</code>, and one canonical Theme stylesheet.</p><table class="table"><thead><tr><th>Core</th><th>Actual exported binding</th><th>Ownership</th></tr></thead><tbody><tr><td><a href="/components/core/accordion/">core.accordion</a></td><td><code>bindAccordion</code></td><td>DOM binder and disposer</td></tr><tr><td><a href="/components/core/radio/">core.radio</a></td><td><code>bindRadio</code></td><td>DOM binder and disposer</td></tr><tr><td><a href="/components/core/toggle/">core.toggle</a></td><td><code>bindToggle</code></td><td>DOM binder and disposer</td></tr><tr><td><a href="/components/core/segmented-control/">core.segmented-control</a></td><td><code>bindSegmentedControl</code></td><td>DOM binder and disposer</td></tr><tr><td><a href="/components/core/number-field/">core.number-field</a></td><td><code>bindNumberField</code></td><td>DOM binder and disposer</td></tr></tbody></table><p class="detail-context">Always supply semantic native markup and manage disposer cleanup on unmount. Keep interactive state owned by the native DOM/adapter, or explicitly synchronize application-owned state with the documented setter. Hardline pressure derives from Theme tokens, never application CSS hacks.</p></section><section class="detail-section"><div class="detail-section-head"><div><span class="kicker">PRIVATE ESM / bindAccordion</span><h2>Vanilla JavaScript</h2></div></div><pre class="detail-code"><code>import { bindAccordion } from &#39;@neosmartuxui/library/core&#39;;
+const root = document.querySelector(&#39;#disclosures&#39;);
+const dispose = bindAccordion(root, { expansion: &#39;single&#39; });
+// Root must contain semantic triggers and panels from the Core fixture.
+// Call dispose() when the host removes the component.</code></pre></section><section class="detail-section"><div class="detail-section-head"><div><span class="kicker">PRIVATE ESM / bindToggle</span><h2>React (uncontrolled DOM adapter)</h2></div></div><pre class="detail-code"><code>import { useEffect, useRef } from &#39;react&#39;;
+import { bindToggle } from &#39;@neosmartuxui/library/core&#39;;
+
+export function TactileToggle() {
+  const button = useRef(null);
+  useEffect(() =&gt; {
+    if (!button.current) return;
+    return bindToggle(button.current);
+  }, []);
+  return &lt;button ref={button} type=&quot;button&quot; className=&quot;ns-toggle&quot;
+                 aria-pressed=&quot;false&quot;&gt;Bold&lt;/button&gt;;
+}
+// The adapter owns DOM aria-pressed while mounted. Do not also
+// control that attribute through React state without explicit sync.</code></pre></section><section class="detail-section"><div class="detail-section-head"><div><span class="kicker">PRIVATE ESM / bindNumberField</span><h2>Vue 3 (mounted DOM adapter)</h2></div></div><pre class="detail-code"><code>&lt;script setup&gt;
+import { ref, onMounted, onBeforeUnmount } from &#39;vue&#39;;
+import { bindNumberField } from &#39;@neosmartuxui/library/core&#39;;
+
+const root = ref(null);
+let dispose = null;
+onMounted(() =&gt; { if (root.value) dispose = bindNumberField(root.value); });
+onBeforeUnmount(() =&gt; dispose?.());
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;div ref=&quot;root&quot; class=&quot;ns-number-field&quot;&gt;
+    &lt;label for=&quot;quantity&quot; class=&quot;ns-number-field__label&quot;&gt;Quantity&lt;/label&gt;
+    &lt;input id=&quot;quantity&quot; class=&quot;ns-number-field__input&quot;
+           type=&quot;number&quot; min=&quot;0&quot; max=&quot;12&quot; step=&quot;1&quot; /&gt;
+    &lt;button type=&quot;button&quot; class=&quot;ns-number-field__step&quot;
+            data-number-field-action=&quot;decrement&quot;&gt;−&lt;/button&gt;
+    &lt;button type=&quot;button&quot; class=&quot;ns-number-field__step&quot;
+            data-number-field-action=&quot;increment&quot;&gt;+&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;!-- Input remains native value authority; avoid duplicate Vue state. --&gt;</code></pre></section><section class="detail-section"><h2>Validation boundaries</h2><p class="detail-context">These binders and the private distribution subpath are validated through actual ESM imports and local source packaging, and DOM actions are tested in Chromium. The React/Vue examples are source-backed integration patterns, not separate shipped or runtime-tested framework component packages. Production and public npm release gates remain closed.</p></section></div></main>
+<footer class="footer"><div class="footer-inner"><div><strong>NeoSmartUXUI<span style="color:#92a8ff">■</span></strong><p>One composable language for accessible components, tactile interactions, themes, Blocks and complete interfaces. Apache-2.0 source.</p></div>
+<div><h3>EXPLORE</h3><a href="/components/">Components</a><a href="/themes/">Themes</a><a href="/blocks/">Blocks</a><a href="/templates/">Templates</a></div>
+<div><h3>BUILD</h3><a href="/studio/">Theme Studio</a><a href="/foundry/">Core Foundry</a><a href="/flavors/">Flavors</a><a href="/labs/">Experimental Labs</a></div>
+<div><h3>RESOURCES</h3><a href="/docs/">Documentation</a><a href="https://github.com/neosmartuxui/neosmartuxui">GitHub source ↗</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/LICENSE">Apache-2.0</a><a href="https://github.com/neosmartuxui/neosmartuxui/blob/main/docs/PUBLIC-SOURCE-STATUS.md">Release status</a></div></div>
+<div class="footer-bottom"><span>© 2026 NeoSmartUXUI. Built for humans. Structured for agents.</span><span>Source: 4f9222a151bd · Individual maturity states apply.</span></div></footer></body></html>

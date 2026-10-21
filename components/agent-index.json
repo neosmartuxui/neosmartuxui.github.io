@@ -1,6 +1,6 @@
 {
   "schema": "neosmartuxui/agent-capabilities@1",
-  "sourceSha": "b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba",
+  "sourceSha": "4f9222a151bdb4da1bce4ef352897c460de700b4",
   "origin": "canonical-registry-and-shipping-source",
   "productionPackageReleased": false,
   "inventory": {
@@ -18,8 +18,8 @@
       "route": "/components/core/button/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/button.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/button.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/button.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/button.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/button.json",
       "states": [
         "rest",
         "hover",
@@ -84,6 +84,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -93,8 +94,8 @@
       "route": "/components/core/checkbox/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/checkbox.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/checkbox.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/checkbox.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/checkbox.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/checkbox.json",
       "states": [
         "rest",
         "hover",
@@ -170,6 +171,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -179,8 +181,8 @@
       "route": "/components/core/input/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/input.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/input.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/input.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/input.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/input.json",
       "states": [
         "rest",
         "hover",
@@ -241,6 +243,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -250,8 +253,8 @@
       "route": "/components/core/radio/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/radio.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/radio.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/radio.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/radio.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/radio.json",
       "states": [
         "rest",
         "hover",
@@ -305,8 +308,27 @@
         "selector": "#radio-slice"
       },
       "providerAuthority": null,
-      "controls": [],
-      "controlAvailability": "not-declared",
+      "controls": [
+        {
+          "id": "alpha",
+          "kind": "button",
+          "operation": "radio",
+          "value": "alpha"
+        },
+        {
+          "id": "beta",
+          "kind": "button",
+          "operation": "radio",
+          "value": "beta"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "integration": {
+        "package": "@neosmartuxui/library/core",
+        "exportName": "bindRadio",
+        "scope": "private-local-only",
+        "docs": "/docs/integrations/"
+      },
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -316,8 +338,8 @@
       "route": "/components/core/switch/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/switch.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/switch.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/switch.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/switch.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/switch.json",
       "states": [
         "rest",
         "hover",
@@ -386,6 +408,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -395,8 +418,8 @@
       "route": "/components/core/tabs/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/tabs.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/tabs.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/tabs.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/tabs.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/tabs.json",
       "states": [
         "rest",
         "hover",
@@ -472,6 +495,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -481,8 +505,8 @@
       "route": "/components/core/textarea/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/textarea.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/textarea.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/textarea.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/textarea.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/textarea.json",
       "states": [
         "rest",
         "hover",
@@ -543,6 +567,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -552,8 +577,8 @@
       "route": "/components/core/select/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/select.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/select.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/select.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/select.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/select.json",
       "states": [
         "rest",
         "hover",
@@ -631,6 +656,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -640,8 +666,8 @@
       "route": "/components/core/card/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/card.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/card.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/card.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/card.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/card.json",
       "states": [
         "rest"
       ],
@@ -676,6 +702,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -685,8 +712,8 @@
       "route": "/components/core/badge/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/badge.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/badge.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/badge.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/badge.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/badge.json",
       "states": [
         "rest",
         "neutral",
@@ -758,6 +785,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -767,8 +795,8 @@
       "route": "/components/core/alert/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/alert.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/alert.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/alert.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/alert.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/alert.json",
       "states": [
         "rest",
         "neutral",
@@ -812,6 +840,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -821,8 +850,8 @@
       "route": "/components/core/field/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/field.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/field.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/field.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/field.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/field.json",
       "states": [
         "rest",
         "invalid",
@@ -854,6 +883,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -863,8 +893,8 @@
       "route": "/components/core/breadcrumb/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/breadcrumb.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/breadcrumb.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/breadcrumb.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/breadcrumb.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/breadcrumb.json",
       "states": [
         "rest",
         "current"
@@ -896,6 +926,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -905,8 +936,8 @@
       "route": "/components/core/pagination/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/pagination.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/pagination.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/pagination.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/pagination.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/pagination.json",
       "states": [
         "rest",
         "hover",
@@ -962,6 +993,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -971,8 +1003,8 @@
       "route": "/components/core/segmented-control/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/segmented-control.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/segmented-control.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/segmented-control.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/segmented-control.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/segmented-control.json",
       "states": [
         "rest",
         "hover",
@@ -1028,8 +1060,33 @@
         "selector": "#segmented-control-slice"
       },
       "providerAuthority": null,
-      "controls": [],
-      "controlAvailability": "not-declared",
+      "controls": [
+        {
+          "id": "overview",
+          "kind": "button",
+          "operation": "segment",
+          "value": "#segment-overview"
+        },
+        {
+          "id": "activity",
+          "kind": "button",
+          "operation": "segment",
+          "value": "#segment-activity"
+        },
+        {
+          "id": "history",
+          "kind": "button",
+          "operation": "segment",
+          "value": "#segment-history"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "integration": {
+        "package": "@neosmartuxui/library/core",
+        "exportName": "bindSegmentedControl",
+        "scope": "private-local-only",
+        "docs": "/docs/integrations/"
+      },
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1039,8 +1096,8 @@
       "route": "/components/core/tooltip/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/tooltip.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/tooltip.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/tooltip.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/tooltip.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/tooltip.json",
       "states": [
         "closed",
         "open",
@@ -1076,6 +1133,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1085,8 +1143,8 @@
       "route": "/components/core/combobox/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/combobox.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/combobox.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/combobox.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/combobox.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/combobox.json",
       "states": [
         "rest",
         "hover",
@@ -1160,6 +1218,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1169,8 +1228,8 @@
       "route": "/components/core/accordion/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/accordion.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/accordion.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/accordion.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/accordion.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/accordion.json",
       "states": [
         "rest",
         "hover",
@@ -1235,8 +1294,27 @@
         "selector": "#accordion-slice"
       },
       "providerAuthority": null,
-      "controls": [],
-      "controlAvailability": "not-declared",
+      "controls": [
+        {
+          "id": "closed",
+          "kind": "button",
+          "operation": "accordion",
+          "value": "closed"
+        },
+        {
+          "id": "open",
+          "kind": "button",
+          "operation": "accordion",
+          "value": "open"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "integration": {
+        "package": "@neosmartuxui/library/core",
+        "exportName": "bindAccordion",
+        "scope": "private-local-only",
+        "docs": "/docs/integrations/"
+      },
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1246,8 +1324,8 @@
       "route": "/components/core/label/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/label.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/label.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/label.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/label.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/label.json",
       "states": [
         "rest",
         "disabled"
@@ -1275,6 +1353,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1284,8 +1363,8 @@
       "route": "/components/core/button-group/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/button-group.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/button-group.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/button-group.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/button-group.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/button-group.json",
       "states": [
         "rest"
       ],
@@ -1309,6 +1388,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1318,8 +1398,8 @@
       "route": "/components/core/input-group/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/input-group.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/input-group.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/input-group.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/input-group.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/input-group.json",
       "states": [
         "rest",
         "focus-within",
@@ -1362,6 +1442,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1371,8 +1452,8 @@
       "route": "/components/core/number-field/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/number-field.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/number-field.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/number-field.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/number-field.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/number-field.json",
       "states": [
         "rest",
         "hover",
@@ -1432,8 +1513,45 @@
         "selector": "#number-field-slice"
       },
       "providerAuthority": null,
-      "controls": [],
-      "controlAvailability": "not-declared",
+      "controls": [
+        {
+          "id": "value3",
+          "kind": "button",
+          "operation": "number-field",
+          "value": "3"
+        },
+        {
+          "id": "value7",
+          "kind": "button",
+          "operation": "number-field",
+          "value": "7"
+        },
+        {
+          "id": "empty",
+          "kind": "button",
+          "operation": "number-field",
+          "value": ""
+        },
+        {
+          "id": "increment",
+          "kind": "button",
+          "operation": "number-step",
+          "value": "increment"
+        },
+        {
+          "id": "decrement",
+          "kind": "button",
+          "operation": "number-step",
+          "value": "decrement"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "integration": {
+        "package": "@neosmartuxui/library/core",
+        "exportName": "bindNumberField",
+        "scope": "private-local-only",
+        "docs": "/docs/integrations/"
+      },
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1443,8 +1561,8 @@
       "route": "/components/core/toggle/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/toggle.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/toggle.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/toggle.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/toggle.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/toggle.json",
       "states": [
         "rest",
         "hover",
@@ -1501,8 +1619,27 @@
         "selector": "#toggle-slice"
       },
       "providerAuthority": null,
-      "controls": [],
-      "controlAvailability": "not-declared",
+      "controls": [
+        {
+          "id": "off",
+          "kind": "button",
+          "operation": "toggle",
+          "value": "off"
+        },
+        {
+          "id": "on",
+          "kind": "button",
+          "operation": "toggle",
+          "value": "on"
+        }
+      ],
+      "controlAvailability": "source-verified",
+      "integration": {
+        "package": "@neosmartuxui/library/core",
+        "exportName": "bindToggle",
+        "scope": "private-local-only",
+        "docs": "/docs/integrations/"
+      },
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1512,8 +1649,8 @@
       "route": "/components/core/toggle-group/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/toggle-group.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/toggle-group.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/toggle-group.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/toggle-group.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/toggle-group.json",
       "states": [
         "rest",
         "none-selected",
@@ -1543,6 +1680,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1552,8 +1690,8 @@
       "route": "/components/core/slider/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/slider.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/slider.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/slider.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/slider.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/slider.json",
       "states": [
         "rest",
         "hover",
@@ -1625,6 +1763,7 @@
         }
       ],
       "controlAvailability": "source-verified",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1634,8 +1773,8 @@
       "route": "/components/core/progress/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/progress.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/progress.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/progress.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/progress.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/progress.json",
       "states": [
         "rest",
         "determinate",
@@ -1666,6 +1805,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1675,8 +1815,8 @@
       "route": "/components/core/spinner/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/spinner.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/spinner.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/spinner.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/spinner.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/spinner.json",
       "states": [
         "active"
       ],
@@ -1701,6 +1841,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1710,8 +1851,8 @@
       "route": "/components/core/separator/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/separator.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/separator.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/separator.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/separator.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/separator.json",
       "states": [
         "rest"
       ],
@@ -1734,6 +1875,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1743,8 +1885,8 @@
       "route": "/components/core/multi-select/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/multi-select.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/multi-select.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/multi-select.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/multi-select.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/multi-select.json",
       "states": [
         "rest",
         "hover",
@@ -1817,6 +1959,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1826,8 +1969,8 @@
       "route": "/components/core/input-otp/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/input-otp.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/input-otp.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/input-otp.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/input-otp.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/input-otp.json",
       "states": [
         "rest",
         "hover",
@@ -1875,6 +2018,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1884,8 +2028,8 @@
       "route": "/components/core/file-upload/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/file-upload.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/file-upload.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/file-upload.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/file-upload.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/file-upload.json",
       "states": [
         "rest",
         "hover",
@@ -1955,6 +2099,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -1964,8 +2109,8 @@
       "route": "/components/core/color-picker/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/color-picker.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/color-picker.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/color-picker.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/color-picker.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/color-picker.json",
       "states": [
         "rest",
         "hover",
@@ -2022,6 +2167,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2031,8 +2177,8 @@
       "route": "/components/core/date-picker/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/date-picker.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/date-picker.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/date-picker.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/date-picker.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/date-picker.json",
       "states": [
         "rest",
         "hover",
@@ -2108,6 +2254,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2117,8 +2264,8 @@
       "route": "/components/core/time-picker/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/time-picker.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/time-picker.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/time-picker.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/time-picker.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/time-picker.json",
       "states": [
         "rest",
         "hover",
@@ -2166,6 +2313,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2175,8 +2323,8 @@
       "route": "/components/core/calendar/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/calendar.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/calendar.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/calendar.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/calendar.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/calendar.json",
       "states": [
         "rest",
         "hover",
@@ -2250,6 +2398,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2259,8 +2408,8 @@
       "route": "/components/core/dialog/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/dialog.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/dialog.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/dialog.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/dialog.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/dialog.json",
       "states": [
         "closed",
         "open"
@@ -2302,6 +2451,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2311,8 +2461,8 @@
       "route": "/components/core/alert-dialog/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/alert-dialog.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/alert-dialog.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/alert-dialog.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/alert-dialog.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/alert-dialog.json",
       "states": [
         "closed",
         "open"
@@ -2354,6 +2504,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2363,8 +2514,8 @@
       "route": "/components/core/drawer/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/drawer.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/drawer.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/drawer.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/drawer.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/drawer.json",
       "states": [
         "closed",
         "open"
@@ -2406,6 +2557,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2415,8 +2567,8 @@
       "route": "/components/core/popover/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/popover.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/popover.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/popover.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/popover.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/popover.json",
       "states": [
         "closed",
         "open"
@@ -2455,6 +2607,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2464,8 +2617,8 @@
       "route": "/components/core/hover-card/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/hover-card.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/hover-card.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/hover-card.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/hover-card.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/hover-card.json",
       "states": [
         "closed",
         "open",
@@ -2505,6 +2658,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2514,8 +2668,8 @@
       "route": "/components/core/dropdown-menu/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/dropdown-menu.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/dropdown-menu.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/dropdown-menu.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/dropdown-menu.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/dropdown-menu.json",
       "states": [
         "closed",
         "open",
@@ -2582,6 +2736,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2591,8 +2746,8 @@
       "route": "/components/core/context-menu/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/context-menu.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/context-menu.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/context-menu.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/context-menu.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/context-menu.json",
       "states": [
         "closed",
         "open",
@@ -2659,6 +2814,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2668,8 +2824,8 @@
       "route": "/components/core/menubar/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/menubar.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/menubar.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/menubar.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/menubar.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/menubar.json",
       "states": [
         "closed",
         "open",
@@ -2737,6 +2893,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2746,8 +2903,8 @@
       "route": "/components/core/navigation-menu/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/navigation-menu.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/navigation-menu.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/navigation-menu.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/navigation-menu.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/navigation-menu.json",
       "states": [
         "closed",
         "open",
@@ -2814,6 +2971,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2823,8 +2981,8 @@
       "route": "/components/core/toast/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/toast.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/toast.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/toast.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/toast.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/toast.json",
       "states": [
         "queued",
         "visible",
@@ -2888,6 +3046,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2897,8 +3056,8 @@
       "route": "/components/core/table/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/table.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/table.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/table.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/table.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/table.json",
       "states": [
         "rest"
       ],
@@ -2931,6 +3090,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2940,8 +3100,8 @@
       "route": "/components/core/data-grid/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/data-grid.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/data-grid.mjs#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/data-grid.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/data-grid.mjs#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/data-grid.json",
       "states": [
         "rest",
         "hover",
@@ -2989,6 +3149,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -2998,8 +3159,8 @@
       "route": "/components/core/item/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/item.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/item.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/item.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/item.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/item.json",
       "states": [
         "rest"
       ],
@@ -3031,6 +3192,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3040,8 +3202,8 @@
       "route": "/components/core/list/",
       "maturity": "Public proof",
       "sourcePath": "packages/adapters/web/components/list.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/list.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/list.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/list.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/list.json",
       "states": [
         "rest"
       ],
@@ -3072,6 +3234,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3081,8 +3244,8 @@
       "route": "/components/core/description-list/",
       "maturity": "Implemented",
       "sourcePath": "packages/adapters/web/components/description-list.css",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/adapters/web/components/description-list.css#L1",
-      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/core/components/description-list.json",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/adapters/web/components/description-list.css#L1",
+      "contractUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/core/components/description-list.json",
       "states": [
         "rest"
       ],
@@ -3113,6 +3276,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3122,7 +3286,7 @@
       "route": "/components/commerce/product-price/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L73",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L73",
       "contractUrl": null,
       "states": [
         "rest"
@@ -3145,6 +3309,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3154,7 +3319,7 @@
       "route": "/components/commerce/product-card/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L86",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L86",
       "contractUrl": null,
       "states": [
         "rest"
@@ -3177,6 +3342,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3186,7 +3352,7 @@
       "route": "/components/commerce/product-gallery/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L115",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L115",
       "contractUrl": null,
       "states": [
         "rest",
@@ -3210,6 +3376,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3219,7 +3386,7 @@
       "route": "/components/commerce/cart-line/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L144",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L144",
       "contractUrl": null,
       "states": [
         "rest",
@@ -3244,6 +3411,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3253,7 +3421,7 @@
       "route": "/components/commerce/order-summary/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L188",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L188",
       "contractUrl": null,
       "states": [
         "rest"
@@ -3276,6 +3444,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3285,7 +3454,7 @@
       "route": "/components/commerce/license-status/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L225",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L225",
       "contractUrl": null,
       "states": [
         "active",
@@ -3312,6 +3481,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3321,7 +3491,7 @@
       "route": "/components/commerce/seat-usage/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L248",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L248",
       "contractUrl": null,
       "states": [
         "rest",
@@ -3345,6 +3515,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3354,7 +3525,7 @@
       "route": "/components/commerce/download-entitlement/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/components.mjs#L264",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/components.mjs#L264",
       "contractUrl": null,
       "states": [
         "eligible",
@@ -3380,6 +3551,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3389,7 +3561,7 @@
       "route": "/components/commerce/product-detail/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave2.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L35",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave2.mjs#L35",
       "contractUrl": null,
       "states": [
         "rest"
@@ -3412,6 +3584,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3421,7 +3594,7 @@
       "route": "/components/commerce/product-media/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave2.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L55",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave2.mjs#L55",
       "contractUrl": null,
       "states": [
         "preview",
@@ -3446,6 +3619,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3455,7 +3629,7 @@
       "route": "/components/commerce/review-summary/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave2.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L111",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave2.mjs#L111",
       "contractUrl": null,
       "states": [
         "rest"
@@ -3478,6 +3652,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3487,7 +3662,7 @@
       "route": "/components/commerce/license-selector/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave2.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L125",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave2.mjs#L125",
       "contractUrl": null,
       "states": [
         "unselected",
@@ -3511,6 +3686,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3520,7 +3696,7 @@
       "route": "/components/commerce/renewal-note/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave2.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L145",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave2.mjs#L145",
       "contractUrl": null,
       "states": [
         "rest"
@@ -3543,6 +3719,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3552,7 +3729,7 @@
       "route": "/components/commerce/pricing-tier/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave2.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave2.mjs#L155",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave2.mjs#L155",
       "contractUrl": null,
       "states": [
         "rest",
@@ -3577,6 +3754,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3586,7 +3764,7 @@
       "route": "/components/commerce/coupon/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L23",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L23",
       "contractUrl": null,
       "states": [
         "ready",
@@ -3613,6 +3791,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3622,7 +3801,7 @@
       "route": "/components/commerce/checkout-field/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L52",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L52",
       "contractUrl": null,
       "states": [
         "rest",
@@ -3646,6 +3825,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3655,7 +3835,7 @@
       "route": "/components/commerce/invoice-details/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L76",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L76",
       "contractUrl": null,
       "states": [
         "rest",
@@ -3683,6 +3863,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3692,7 +3873,7 @@
       "route": "/components/commerce/checkout-steps/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L120",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L120",
       "contractUrl": null,
       "states": [
         "ready",
@@ -3718,6 +3899,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3727,7 +3909,7 @@
       "route": "/components/commerce/payment-method/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L141",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L141",
       "contractUrl": null,
       "states": [
         "rest",
@@ -3751,6 +3933,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3760,7 +3943,7 @@
       "route": "/components/commerce/payment-failure/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L165",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L165",
       "contractUrl": null,
       "states": [
         "failed",
@@ -3785,6 +3968,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3794,7 +3978,7 @@
       "route": "/components/commerce/payment-recovery/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L187",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L187",
       "contractUrl": null,
       "states": [
         "ready",
@@ -3820,6 +4004,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3829,7 +4014,7 @@
       "route": "/components/commerce/processing-state/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L211",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L211",
       "contractUrl": null,
       "states": [
         "processing"
@@ -3852,6 +4037,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3861,7 +4047,7 @@
       "route": "/components/commerce/order-confirmation/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L222",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L222",
       "contractUrl": null,
       "states": [
         "confirmed"
@@ -3884,6 +4070,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3893,7 +4080,7 @@
       "route": "/components/commerce/receipt/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave3.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave3.mjs#L242",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave3.mjs#L242",
       "contractUrl": null,
       "states": [
         "paid"
@@ -3916,6 +4103,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3925,7 +4113,7 @@
       "route": "/components/commerce/download-row/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L53",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L53",
       "contractUrl": null,
       "states": [
         "eligible",
@@ -3951,6 +4139,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3960,7 +4149,7 @@
       "route": "/components/commerce/purchase-history-row/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L66",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L66",
       "contractUrl": null,
       "states": [
         "paid",
@@ -3986,6 +4175,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -3995,7 +4185,7 @@
       "route": "/components/commerce/license-card/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L77",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L77",
       "contractUrl": null,
       "states": [
         "active",
@@ -4022,6 +4212,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4031,7 +4222,7 @@
       "route": "/components/commerce/invoice-history/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L92",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L92",
       "contractUrl": null,
       "states": [
         "empty",
@@ -4055,6 +4246,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4064,7 +4256,7 @@
       "route": "/components/commerce/activation-row/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L110",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L110",
       "contractUrl": null,
       "states": [
         "active",
@@ -4089,6 +4281,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4098,7 +4291,7 @@
       "route": "/components/commerce/update-eligibility/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L120",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L120",
       "contractUrl": null,
       "states": [
         "active",
@@ -4123,6 +4316,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4132,7 +4326,7 @@
       "route": "/components/commerce/renewal-state/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L131",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L131",
       "contractUrl": null,
       "states": [
         "active",
@@ -4162,6 +4356,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4171,7 +4366,7 @@
       "route": "/components/commerce/plan-change/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L143",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L143",
       "contractUrl": null,
       "states": [
         "ready",
@@ -4198,6 +4393,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4207,7 +4403,7 @@
       "route": "/components/commerce/ownership-transfer/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L186",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L186",
       "contractUrl": null,
       "states": [
         "ready",
@@ -4232,6 +4428,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4241,7 +4438,7 @@
       "route": "/components/commerce/subscription-management/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L239",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L239",
       "contractUrl": null,
       "states": [
         "active",
@@ -4268,6 +4465,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4277,7 +4475,7 @@
       "route": "/components/commerce/ownership-timeline/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/commerce/wave4.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/commerce/wave4.mjs#L280",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/commerce/wave4.mjs#L280",
       "contractUrl": null,
       "states": [
         "empty",
@@ -4301,6 +4499,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4310,7 +4509,7 @@
       "route": "/components/operations/stat-card/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L33",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L33",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4334,6 +4533,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4343,7 +4543,7 @@
       "route": "/components/operations/activation-meter/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L43",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L43",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4367,6 +4567,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4376,7 +4577,7 @@
       "route": "/components/operations/integration-status/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L53",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L53",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4400,6 +4601,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4409,7 +4611,7 @@
       "route": "/components/operations/risk-indicator/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L62",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L62",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4433,6 +4635,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4442,7 +4645,7 @@
       "route": "/components/operations/permission-scope/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L69",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L69",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4466,6 +4669,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4475,7 +4679,7 @@
       "route": "/components/operations/webhook-delivery-log/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L82",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L82",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4499,6 +4703,7 @@
       "providerAuthority": "callback",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4508,7 +4713,7 @@
       "route": "/components/operations/secret-reference/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L113",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L113",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4532,6 +4737,7 @@
       "providerAuthority": "masked-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4541,7 +4747,7 @@
       "route": "/components/operations/release-artifact/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L123",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L123",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4565,6 +4771,7 @@
       "providerAuthority": "callback",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4574,7 +4781,7 @@
       "route": "/components/operations/rollout-stages/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L151",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L151",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4598,6 +4805,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4607,7 +4815,7 @@
       "route": "/components/operations/operation-timeline/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L166",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L166",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4631,6 +4839,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4640,7 +4849,7 @@
       "route": "/components/operations/usage-chart/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L180",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L180",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4664,6 +4873,7 @@
       "providerAuthority": "read-only",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4673,7 +4883,7 @@
       "route": "/components/operations/agent-approval-plan/",
       "maturity": "Experimental",
       "sourcePath": "packages/verticals/operations/components.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/verticals/operations/components.mjs#L207",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/verticals/operations/components.mjs#L207",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4697,6 +4907,7 @@
       "providerAuthority": "callback",
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4706,7 +4917,7 @@
       "route": "/components/block/trust-strip/",
       "maturity": "Experimental",
       "sourcePath": "packages/blocks/commerce/index.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/blocks/commerce/index.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4723,6 +4934,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4732,7 +4944,7 @@
       "route": "/components/block/promo-band/",
       "maturity": "Experimental",
       "sourcePath": "packages/blocks/commerce/index.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/blocks/commerce/index.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4749,6 +4961,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4758,7 +4971,7 @@
       "route": "/components/block/testimonials/",
       "maturity": "Experimental",
       "sourcePath": "packages/blocks/commerce/index.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/blocks/commerce/index.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4775,6 +4988,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4784,7 +4998,7 @@
       "route": "/components/block/guarantee/",
       "maturity": "Experimental",
       "sourcePath": "packages/blocks/commerce/index.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/blocks/commerce/index.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4801,6 +5015,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4810,7 +5025,7 @@
       "route": "/components/block/plan-comparison/",
       "maturity": "Experimental",
       "sourcePath": "packages/blocks/commerce/index.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/blocks/commerce/index.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4827,6 +5042,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4836,7 +5052,7 @@
       "route": "/components/block/bundle-builder/",
       "maturity": "Experimental",
       "sourcePath": "packages/blocks/commerce/index.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/blocks/commerce/index.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4853,6 +5069,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4862,7 +5079,7 @@
       "route": "/components/block/account-nav/",
       "maturity": "Experimental",
       "sourcePath": "packages/blocks/commerce/index.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/blocks/commerce/index.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/blocks/commerce/index.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4879,6 +5096,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4888,7 +5106,7 @@
       "route": "/components/template/license-ops-dashboard/",
       "maturity": "Experimental",
       "sourcePath": "packages/templates/operations.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/templates/operations.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/templates/operations.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4905,6 +5123,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     },
@@ -4914,7 +5133,7 @@
       "route": "/components/template/release-operations-console/",
       "maturity": "Experimental",
       "sourcePath": "packages/templates/operations.mjs",
-      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/b3a3661f9f5a9aee43dcc5dcdc85ed4335ec2fba/packages/templates/operations.mjs#L1",
+      "sourceUrl": "https://github.com/neosmartuxui/neosmartuxui/blob/4f9222a151bdb4da1bce4ef352897c460de700b4/packages/templates/operations.mjs#L1",
       "contractUrl": null,
       "states": [
         "rest"
@@ -4931,6 +5150,7 @@
       "providerAuthority": null,
       "controls": [],
       "controlAvailability": "not-declared",
+      "integration": null,
       "documentationOnly": true,
       "productionIntegration": false
     }
